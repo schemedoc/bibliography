@@ -32,7 +32,7 @@
                    `((year ,(string->number value))))
                   (else
                    `((,field ,value)))))))
-        ((rxmatch #/^\}$/ line)
+        ((rxmatch #/^\s*\}$/ line)
          '())
         (else
          (error "Cannot parse BibTeX line:" line))))
