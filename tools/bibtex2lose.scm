@@ -18,7 +18,7 @@
   (cond ((rxmatch #/^@([a-z]+)\{([A-Za-z0-9]+),$/ line)
          => (lambda (m)
               `((id ,(rxmatch-substring m 2))
-                (type ,(rxmatch-substring m 1)))))
+                (type ,(string->symbol (rxmatch-substring m 1))))))
         ((rxmatch #/^\s*([a-z]+)=\{(.*)\},?$/ line)
          => (lambda (m)
               (let ((field (string->symbol (rxmatch-substring m 1)))

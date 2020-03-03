@@ -274,7 +274,7 @@
 
 ;; TODO: Also appeared in 2009 Workshop on Scheme and Functional Programming
 (id "cowley2009distributed")
-(type "article")
+(type article)
 (title "Distributed Software Transactional Memory")
 (author "Cowley, Anthony")
 (author "Taylor, CJ")
@@ -285,7 +285,7 @@
 
 ;; TODO: Also appeared in 2009 Workshop on Scheme and Functional Programming
 (id "kimball2007software")
-(type "inproceedings")
+(type inproceedings)
 (title "Software transactions meet first-class continuations")
 (author "Kimball, Aaron")
 (author "Grossman, Dan")
@@ -296,7 +296,7 @@
 (abstract "Software transactions are a promising technology that make writing correct and efficient shared-memory multithreaded programs easier, but adding transactions to programming languages requires defining and implementing how they interact with existing language features. In this work, we consider how transactions interact with first-class continuations. We demonstrate that different idiomatic uses of continuations require different transactional semantics, so a language supporting transactions and call-with-current-continuation should provide programmers with a way to control these semantics. We present a design meeting this need, addressing both escaping from and reentering the dynamic extent of a transaction. We have implemented our design by modifying Scheme48. We present the most interesting details of the implementation and its performance on some small benchmarks.")
 
 (id "epardaud2004mobile")
-(type "article")
+(type article)
 (title "Mobile reactive programming in ULM")
 (author "Epardaud, Stéphane")
 (journal "on Scheme and Functional Programming")
@@ -306,7 +306,7 @@
 (abstract "We present the embedding of ULM in Scheme and an implementation of a compiler and virtual machine for it. ULM is a core programming model that allows multi-threaded and distributed programming via strong mobility with a deterministic semantics. We present the multi-threading and distributed primitives of ULM step by step using examples. The introduction of mobility in a Scheme language raises questions about the semantics of variables with respect to migration. We expose the problems and offer two solutions alongside ULM’s network references. We also present our implementation of the compiler, virtual machine and the concurrent threading library written in Scheme.")
 
 (id "wittenberger2002askemos")
-(type "article")
+(type article)
 (title "ASKEMOS: A distributed settlement")
 (author "Wittenberger, J")
 (journal "Proceedings of SSGRR 2002, L'Aquila, Italy")
@@ -315,7 +315,7 @@
 (abstract "This paper presents Askemos, an autonomous, distributed operating system on top of peer to peer networks which significantly raises the level of abstraction in comparison with today’s operating systems. Askemos addresses safe, secure and correct (forge proof) information processing while securing intellectual property in an innovative way." "Askemos defines a virtual machine on document level, which is defined in terms of abstract trees and pure functional transformation of them, both described in XML." "This virtual machine has no physical representation at any single machine. Instead it works distributed among independent components which appear as if they observed it. To achieve that effect, the participating machines compute the process steps of the virtual machine independent and vote among each other about the correct result." "To prevent illegal attacks, there exists no concept of unique resources like superuser rights or unique name spaces.")
 
 (id "dionne1996taxonomy")
-(type "inproceedings")
+(type inproceedings)
 (title "A Taxonomy of Distributed Debuggers Based on Execution Replay.")
 (author "Dionne, Carl")
 (author "Feeley, Marc")
@@ -327,7 +327,7 @@
 (abstract "This paper presents a taxonomy of parallel and distributed debuggers based on execution replay. Programming of distributed and parallel systems is a complex task. Amongst the many factors contributing to this complexity, the nondeterminacy of these systems is an important one. Execution replay is a technique developed to facilitate the debugging of nondeterministic programs. Execution replay has very broad applications and not every algorithm is applicable in every situation. This taxonomy provides a precise classification of replay debuggers using nine criteria. From this classification, it is easier to determine a debugger's scope of application, outline its strengths and weaknesses and compare it with others. This taxonomy is illustrated and validated using a collection of existing replay debuggers.")
 
 (id "feeley1995lazy")
-(type "inproceedings")
+(type inproceedings)
 (title "Lazy remote procedure call and its implementation in a parallel variant of C")
 (author "Feeley, Marc")
 (booktitle "International Workshop on Parallel Symbolic Languages and Systems")
