@@ -43,15 +43,32 @@
 
 ;;;
 
+(define (read-group-loop form group)
+  (cond ((eof-object? form)
+         (error "Missing end-group"))
+        ((equal? 'end-group (car form))
+         (unless (null? (cdr form)) (error "end-group: usage"))
+         (reverse group))
+        ((equal? 'group (car form))
+         (let ((inner-group (read-group form)))
+           (read-group-loop (read) (cons inner-group group))))
+        ((equal? 'id (car form))
+         (let read-entry ((form (read)) (entry (list form)))
+           (if (or (eof-object? form) (member (car form) '(id group end-group)))
+               (read-group-loop form (cons (reverse entry) group))
+               (read-entry (read) (cons form entry)))))
+        (else
+         (error "Expecting (id ...)"))))
+
+(define (read-group form)
+  (unless (= 1 (length (cdr form))) (error "group: usage"))
+  (let ((group-name (cadr form)))
+    (read-group-loop (read) (list group-name))))
+
 (define (read-all-entries)
-  (let read-entries ((form (read)) (entries '()))
-    (cond ((eof-object? form) (reverse entries))
-          ((equal? 'id (car form))
-           (let read-entry ((form (read)) (entry (list form)))
-             (if (or (eof-object? form) (equal? 'id (car form)))
-                 (read-entries form (cons (reverse entry) entries))
-                 (read-entry (read) (cons form entry)))))
-          (else (error "File does not start with (id ...)")))))
+  (let ((top-group (read-group (read))))
+    (unless (eof-object? (read)) (error "Things after end-group"))
+    top-group))
 
 (define (italic text) (string-append "_" text "_"))
 (define (quoted text) (string-append "\"" text "\""))
@@ -86,5 +103,6 @@
   (for-each (lambda (entry) (for-each writeln entry) (newline))
             entries))
 
-(display-entries-as-markdown (read-all-entries))
+;;(display-entries-as-markdown (read-all-entries))
 ;;(redisplay-entries-as-lose (read-all-entries))
+(write (read-all-entries)) (newline)

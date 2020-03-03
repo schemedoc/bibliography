@@ -1,6 +1,6 @@
-;;;; Distributed, Parallel, and Concurrent Programming
+(group "Distributed, Parallel, and Concurrent Programming")
 
-;;; Scheme Dialects for Distributed Programming
+(group "Scheme Dialects for Distributed Programming")
 
 (id germain2006concurrency)
 (type inproceedings)
@@ -101,3 +101,7 @@
 (year 1997)
 (month October)
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/gendist.ps.gz")
+
+(end-group)
+
+(end-group)
