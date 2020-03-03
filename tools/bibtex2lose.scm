@@ -21,9 +21,10 @@
                 (type ,(string->symbol (rxmatch-substring m 1))))))
         ((rxmatch #/^\s*([a-z]+)=\{(.*)\},?$/ line)
          => (lambda (m)
-              (let ((field (string->symbol (rxmatch-substring m 1)))
-                    (value (rxmatch-substring m 2)))
-                (assert-ascii value)
+              (let ((field (string->symbol
+                            (rxmatch-substring m 1)))
+                    (value (all-chars->ascii-graphic
+                            (rxmatch-substring m 2))))
                 (case field
                   ((author)
                    (map (lambda (author) `(author ,author))
