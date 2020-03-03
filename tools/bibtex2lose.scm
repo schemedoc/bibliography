@@ -28,6 +28,8 @@
                   ((author)
                    (map (lambda (author) `(author ,author))
                         (string-split value " and ")))
+                  ((year)
+                   `((year ,(string->number value))))
                   (else
                    `((,field ,value)))))))
         ((rxmatch #/^\}$/ line)
