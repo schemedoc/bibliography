@@ -53,6 +53,7 @@
 (school "Massachusetts Institute of Technology")
 (year 1993)
 (pdf "https://dspace.mit.edu/bitstream/handle/1721.1/7085/AITR-1627.pdf")
+(abstract "Linear graph reduction is a simple computational model in which the cost of naming things is explicitly represented. The key idea is the notion of linearity. A name is linear if it is only used once, so with linear naming you cannot create more than one outstanding reference to an entity. As a result, linear naming is cheap to support and easy to reason about." "Programs can be translated into the linear graph reduction model such that linear names in the program are implemented directly as linear names in the model. Nonlinear names are supported by constructing them out of linear names. The translation thus exposes those places where the program uses names in expensive, nonlinear ways." "Two applications demonstrate the utility of using linear graph reduction: First, in the area of distributed computing, linear naming makes it easy to support cheap cross-network references and highly portable data structures, Linear naming also facilitates demand driven migration of tasks and data around the network without requiring explicit guidance from the programmer." "Second, linear graph reduction reveals a new characterization of the phenomenon of state. Systems in which state appears are those which depend on certain global system properties. State is not a localizable phenomenon, which suggests that our usual object oriented metaphor for state is awed.")
 
 (id moreau1997nexeme)
 (type inproceedings)
@@ -89,6 +90,7 @@
 (year 1997)
 (pdf "https://eprints.soton.ac.uk/250720/1/10.1.1.44.6685.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/NeXeme/man/ug.ps")
+(abstract "The remote service request, a form of remote procedure call, and the global pointer, a global naming mechanism, are two features at the heart of Nexus, a library for building distributed systems. NeXeme is an extension of Scheme that fully integrates both concepts in a mostly-functional framework, hence providing an expressive language for distributed computing. This document is both NeXeme reference manual and user's guide.")
 
 (id queinnec1998dmeroon)
 (type techreport)
@@ -100,6 +102,7 @@
 (ps "https://pages.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "ftp://ftp.lip6.fr/lip6/reports/1998/lip6.1998.039.ps.gz")
+(abstract "DMeroon provides a data model above a coherently distributed shared memory. DMeroon allows multiple users to statically or dynamically create new classes hierarchically organized, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, marshaling and unmarshaling objects, migrating and sharing objects, local and global garbage collections." "This document describes DMeroon, its philosophy of design, its architecture and principles of implementation, and its bindings with various languages. It also presents some internal details within DMeroon or some applications above DMeroon." "This document tries to present the overlines of DMeroon, in places, it describes features which are not implemented, in some other places there are implemented features that are not documented. I packed it up in order for interested people to get an idea and, perhaps, induce them to pursue my effort or definitively convince me of its little value. I have a lot of lectures to prepare for the following months and will not be able to devote much time to DMeroon.")
 
 (id queinnec1997distributed)
 (type inproceedings)
@@ -110,6 +113,7 @@
 (month 10)
 (pdf "https://christian.queinnec.org/PDF/gendist.pdf")
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/gendist.ps.gz")
+(abstract "The network now gives the opportunity to combine code and data from everywhere in the world. However, the dominant paradigm is the client/server model where immobile objects with static interfaces can only be used as prescribed by their proprietary site. While this constraint corresponds to understandable industrial programming practices, it negates the point of view of dynamic clients that collect interesting objects and want to confer new behaviors to these collected objects. How to enrich objects \"from the outside\" that is, without access to their source code hence without re-compilation of their defining classes, is the problem addressed by this paper." "Generic functions, à la CLOS, separate classes from behaviors i.e., methods. Roughly said, a generic function is a bag of methods; when a generic function is invoked, the nature (type, class or, structure) of its argument(s) triggers the choice of an appropriate method. Methods are no longer the exclusive property of classes, they are regular functions anyone may define outside classes definitions." "This paper describes how generic functions may be conveniently and not so inefficiently implemented in a distributed world. Section 1 presents some of the constraints of distributed systems. Section 2 recalls the framework of generic functions as well as how we extend them to the distributed world. Significantly, we address the problem of mutual recursion over a bag of methods to which new methods may be adjoined at run-time. We also propose a new feature: call-former-method. Section 3 discusses implementation while Section 4 eventually discusses the incorporation of these results in a real system.")
 
 ;; TODO: This paper seems to have disappeared from the net:
 ;;
@@ -130,6 +134,7 @@
 (organization "Springer")
 (pdf "http://christian.queinnec.org/PDF/psls.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/psls.ps.gz")
+(abstract "DMeroon is a library of C functions that provides a data model above a coherently distributed shared memory. DMeroon allows users to statically or dynamically create new classes, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, migrating and sharing objects, local and global garbage collections. This document provides an overview of DMeroon.")
 
 (id queinnec1992design)
 (type inproceedings)
@@ -142,6 +147,7 @@
 (organization "Springer")
 (pdf "https://christian.queinnec.org/PDF/pwb.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/pwb.ps.gz")
+(abstract "This paper presents a new dialect of Scheme aimed towards concurrency and distribution. It offers a few primitives, including first-class continuations, with very simple semantics. Numerous examples are given showing how to program the classical concurrent control operators such as future, pcall and either. The implementation is sketched and presented along the lines of a metacircular interpreter.")
 
 (id queinnec1992concurrent)
 (type inproceedings)
@@ -153,6 +159,7 @@
 (organization "Springer")
 (pdf "https://christian.queinnec.org/PDF/parle.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/parle.ps.gz")
+(abstract "The Lisp family of languages has traditionally been a privileged domain where linguistic experiments were done, this paper presents a new dialect offering concurrency and distribution. This dialect, nick-named CD-Scheme, has been designed above Scheme with as few as possible features to allow a great expressiveness but still to retain the original consistency and simplicity of Scheme. We explicitly show how common parallel constructs can be written in regular CD-Scheme." "A denotational semantics is also presented that expresses the detailed meaning of assignment, data mutation, continuations in presence of concurrency and distribution. This semantics offers a basis to understand new proposals of concurrent or distributed features and may be used to justify compiler optimizations or implementation techniques. The proposed set of features of CD-Scheme can be also used to extend languages other than Scheme.")
 
 ;; TODO: La lettre du Transputer. 16. December 1992.
 (id piquer1992transpive)
@@ -163,6 +170,7 @@
 (year 1992)
 (publisher "Citeseer")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.8810&rep=rep1&type=pdf")
+(abstract "This paper exposes an overview of a distributed Lisp system, called TransPive, designed to run on a loosely-coupled multi-processor system." "The main goal of the system is to provide a transparent distributed programming environment, sharing data structures using remote pointers, as a platform to prototype distributed algorithms and applications." "The TransPive message passing primitives create the remote pointers, with local caches for the object's value (to improve performance of read accesses). A protocol to invalidate the caches is invoked when a modifier is applied. A Distributed Garbage Collector is included on TransPive to reclaim distant pointed objects. A simple mechanism to distribute the computation over the system is also provided." "All the mechanisms have been implemented without any operating system support (as virtual memory), and so they are portable to any reliable message-passing distributed environment. In particular, the first version has been implemented on a Transputer network." "The paper is an overview of the remote pointer mechanism, the memory structures and protocols used to share data, the garbage collector and the remote process creation primitives.")
 
 (id jagannathan1997communication)
 (type inproceedings)
@@ -174,6 +182,7 @@
 (organization "Springer")
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/coord97.ps.gz")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.6224&rep=rep1&type=pdf")
+(abstract "Coordination languages for parallel and distributed systems specify mechanisms for creating tasks and communicating data among them. These languages typically assume that (a) once a task begins execution on some processor, it will remain resident on that processor throughout its lifetime, and (b) communicating shared data among tasks is through some form of message-passing and data migration. In this paper, we investigate an alternative approach to understanding coordination. Communication-passing style (CmPS) refers to a coordination semantics in which data communication is always undertaken by migrating the continuation of the task requiring the data to the processor where the data resides." "Communication-passing style is closely related to continuation-passing style (CPS), a useful transformation for compiling functional languages. Just as CPS eliminates implicit call-return sequences, CmPS eliminates implicit inter-processor data communication and synchronization requests. In a CmPS-transformed program, only continuations (i.e., control contexts) are transmitted across machines; all synchronization and data communication occurs locally. Besides providing significant optimization opportunities, CmPS is a natural representation for implementations on networks of workstations." "This paper presents an operational semantics for a coordination language that supports first-class distributed data repositories. The computation sublanguage considered is an untyped call-by-value functional language similar to pure Scheme. Optimizations and implementation issues that arise from using a CmPS-driven coordination language are also described.")
 
 (id cejtin1995higher)
 (type article)
@@ -189,6 +198,7 @@
 (publisher "ACM New York, NY, USA")
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/toplas95.ps.gz")
 (pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2885348_Higher-Order_Distributed_Objects/links/544008b50cf21227a11ba1ae.pdf")
+(abstract "We describe a distributed implementation of Scheme that permits efficient transmission of higherorder objects such as closures and continuations. The integration of distributed communication facilities within a higher-order programming language engenders a number of new abstractions and paradigms for distributed computing. Among these are user-specified load-balancing and migration policies for threads, incrementally linked distributed computations, and parameterized client-server applications. To our knowledge, this is the first distributed dialect of Scheme (or a related language) that addresses lightweight communication abstractions for higher-order objects.")
 
 (id dwyer1981scheme)
 (type techreport)
