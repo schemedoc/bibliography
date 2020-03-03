@@ -10,12 +10,14 @@
          => (lambda (m)
               `((id ,(rxmatch-substring m 2))
                 (type ,(rxmatch-substring m 1)))))
-        ((rxmatch #/^\s*([a-z]+)=\{(.*)\},$/ line)
+        ((rxmatch #/^\s*([a-z]+)=\{(.*)\},?$/ line)
          => (lambda (m)
               `((,(string->symbol (rxmatch-substring m 1))
                  ,(rxmatch-substring m 2)))))
+        ((rxmatch #/^\}$/ line)
+         '())
         (else
-         '())))
+         (error "Cannot parse BibTeX line:" line))))
 
 (define (writeln x) (write x) (newline))
 
