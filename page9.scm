@@ -108,6 +108,92 @@
 (month 10)
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/gendist.ps.gz")
 
+;; TODO: This paper seems to have disappeared from the net:
+;;
+;; Christian Queinnec. "Bribes de DMeroon". _Actes des journ ees de
+;; recherche sur la Memoire Partagee Repartie_. MPR 96. May 1996.
+
+;; TODO: This paper also appeared in PSLS 95 - Parallel Symbolic
+;; Langages and Systems. Lecture Notes in Computer Science 1068.
+;; October 1995.
+;;
+(id queinnec1995dmeroon)
+(type inproceedings)
+(title "DMeroon: overview of a distributed class-based causally-coherent data model")
+(author "Queinnec, Christian")
+(booktitle "International Workshop on Parallel Symbolic Languages and Systems")
+(pages "295--309")
+(year 1995)
+(organization "Springer")
+(pdf "http://christian.queinnec.org/PDF/psls.pdf")
+(ps "https://pages.lip6.fr/Christian.Queinnec/Papers/psls.ps.gz")
+
+(id queinnec1992design)
+(type inproceedings)
+(title "Design of a concurrent and distributed language")
+(author "Queinnec, Christian")
+(author "De Roure, David")
+(booktitle "US/Japan Workshop on Parallel Symbolic Computing")
+(pages "233--259")
+(year 1992)
+(organization "Springer")
+(ps "https://pages.lip6.fr/Christian.Queinnec/Papers/pwb.ps.gz")
+
+(id queinnec1992concurrent)
+(type inproceedings)
+(title "A concurrent and distributed extension of scheme")
+(author "Queinnec, Christian")
+(booktitle "International Conference on Parallel Architectures and Languages Europe")
+(pages "431--446")
+(year 1992)
+(organization "Springer")
+(ps "https://pages.lip6.fr/Christian.Queinnec/Papers/parle.ps.gz")
+
+;; TODO: La lettre du Transputer. 16. December 1992.
+(id piquer1992transpive)
+(type article)
+(title "TransPive: A distributed Lisp system")
+(author "Piquer, José")
+(author "Queinnec, Christian")
+(year 1992)
+(publisher "Citeseer")
+(pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.8810&rep=rep1&type=pdf")
+
+(id jagannathan1997communication)
+(type inproceedings)
+(title "Communication-passing style for coordination languages")
+(author "Jagannathan, Suresh")
+(booktitle "International Conference on Coordination Languages and Models")
+(pages "131--149")
+(year 1997)
+(organization "Springer")
+(ps "http://www.cs.purdue.edu/homes/suresh/papers/coord97.ps.gz")
+(pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.6224&rep=rep1&type=pdf")
+
+(id cejtin1995higher)
+(type article)
+(title "Higher-order distributed objects")
+(author "Cejtin, Henry")
+(author "Jagannathan, Suresh")
+(author "Kelsey, Richard")
+(journal "ACM Transactions on Programming Languages and Systems (TOPLAS)")
+(volume 17)
+(number 5)
+(pages "704--739")
+(year 1995)
+(publisher "ACM New York, NY, USA")
+(ps "http://www.cs.purdue.edu/homes/suresh/papers/toplas95.ps.gz")
+(pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2885348_Higher-Order_Distributed_Objects/links/544008b50cf21227a11ba1ae.pdf")
+
+(id dwyer1981scheme)
+(type techreport)
+(title "A SCHEME for distributed processes")
+(author "Dwyer, Rex A")
+(author "Dybvig, R Kent")
+(year 1981)
+(institution "Computer Science Department, Indiana University")
+(number 107)
+
 (end-group)
 
 (end-group)
