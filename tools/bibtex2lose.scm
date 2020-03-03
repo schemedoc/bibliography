@@ -12,8 +12,14 @@
                 (type ,(rxmatch-substring m 1)))))
         ((rxmatch #/^\s*([a-z]+)=\{(.*)\},?$/ line)
          => (lambda (m)
-              `((,(string->symbol (rxmatch-substring m 1))
-                 ,(rxmatch-substring m 2)))))
+              (let ((field (string->symbol (rxmatch-substring m 1)))
+                    (value (rxmatch-substring m 2)))
+                (case field
+                  ((author)
+                   (map (lambda (author) `(author ,author))
+                        (string-split value " and ")))
+                  (else
+                   `((,field ,value)))))))
         ((rxmatch #/^\}$/ line)
          '())
         (else
