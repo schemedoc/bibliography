@@ -87,6 +87,7 @@
 (author "Moreau, Luc")
 (institution "University of Southampton")
 (year 1997)
+(pdf "https://eprints.soton.ac.uk/250720/1/10.1.1.44.6685.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/NeXeme/man/ug.ps")
 
 (id queinnec1998dmeroon)
@@ -96,6 +97,7 @@
 (institution "LIP6, Sorbonne University and CNRS")
 (number "039")
 (year 1998)
+(ps "https://pages.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "ftp://ftp.lip6.fr/lip6/reports/1998/lip6.1998.039.ps.gz")
 
@@ -106,6 +108,7 @@
 (booktitle "Proc. 1997 France-Japan Workshop on Object-Based Parallel and Distributed Computing")
 (year 1997)
 (month 10)
+(pdf "https://christian.queinnec.org/PDF/gendist.pdf")
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/gendist.ps.gz")
 
 ;; TODO: This paper seems to have disappeared from the net:
@@ -137,6 +140,7 @@
 (pages "233--259")
 (year 1992)
 (organization "Springer")
+(pdf "https://christian.queinnec.org/PDF/pwb.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/pwb.ps.gz")
 
 (id queinnec1992concurrent)
@@ -147,6 +151,7 @@
 (pages "431--446")
 (year 1992)
 (organization "Springer")
+(pdf "https://christian.queinnec.org/PDF/parle.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/parle.ps.gz")
 
 ;; TODO: La lettre du Transputer. 16. December 1992.
