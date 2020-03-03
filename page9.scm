@@ -13,8 +13,8 @@
 (year 2006)
 (month September)
 (organization "Citeseer")
-(pdf "https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2006/09-germain.pdf")
 (pdf "http://schemeworkshop.org/2006/09-germain.pdf")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/GermainFeeleyMonnierSW06.pdf")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.1527&rep=rep1&type=pdf")
 (abstract "Termite Scheme is a variant of Scheme intended for distributed computing. It offers a simple and powerful concurrency model, inspired by the Erlang programming language, which is based on a message-passing model of concurrency." "Our system is well suited for building custom protocols and abstractions for distributed computation. Its open network model allows for the building of non-centralized distributed applications." "The possibility of failure is reflected in the model, and ways to handle failure are available in the language. We exploit the existence of first class continuations in order to allow the expression of high-level concepts such as process migration." "We describe the Termite model and its implications, how it compares to Erlang, and describe sample applications built with Termite. We conclude with a discussion of the current implementation and its performance.")
 
@@ -27,7 +27,7 @@
 (pages "59--68")
 (year 2007)
 (pdf "https://www-labs.iro.umontreal.ca/~feeley/papers/PierardFeeleySW07.pdf")
-(pdf "https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2007/06-pierard.pdf")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/PierardFeeleySW07.pdf")
 (abstract "The transfer of program data between the nodes of a distributed system is a fundamental operation. It usually requires some form of data serialization. For a functional language such as Scheme it is clearly desirable to also allow the unrestricted transfer of functions between nodes. With the goal of developing a portable implementation of the Termite system we have designed the Mobit Scheme interpreter which supports unrestricted serialization of Scheme objects, including procedures and continuations. Mobit is derived from an existing Scheme in Scheme fast interpreter. We demonstrate how macros were valuable in transforming the interpreter while preserving its structure and maintainability. Our performance evaluation shows that the run time speed of Mobit is comparable to existing Scheme interpreters.")
 
 (id fuchs1985dreme)
@@ -52,8 +52,7 @@
 (author "Bawden, Alan")
 (school "Massachusetts Institute of Technology")
 (year 1993)
-(ps "https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AITR-1627.ps.gz")
-(pdf "https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AITR-1627.pdf")
+(pdf "https://dspace.mit.edu/bitstream/handle/1721.1/7085/AITR-1627.pdf")
 
 (id moreau1997nexeme)
 (type inproceedings)
