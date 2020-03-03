@@ -40,12 +40,14 @@
 (define (all-whitespace->spaces string)
   (string-trim-both (regexp-replace-all #/\s+/ string " ")))
 
+(define (the-char->string str old-char new-str)
+  (regexp-replace-all (regexp-quote (string old-char)) str new-str))
+
 (define (all-chars->ascii-graphic str)
-  (let ((control-L #\x0C))
-    (set! str
-      (regexp-replace-all (regexp-quote (string control-L)) str "fi"))
-    (assert-ascii str)
-    str))
+  (set! str (the-char->string str #\x0C "fi"))
+  (set! str (the-char->string str #\x2019 "'"))
+  (assert-ascii str)
+  str)
 
 (define (bibtex-lines+abstract->lose-forms lines)
   (let bibtex ((lines lines) (all-forms '()))
