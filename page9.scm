@@ -270,4 +270,50 @@
 
 (end-group)
 
+(group "Other Topics in Distributed Compututing")
+
+;; TODO: Also appeared in 2009 Workshop on Scheme and Functional Programming
+(id "cowley2009distributed")
+(type "article")
+(title "Distributed Software Transactional Memory")
+(author "Cowley, Anthony")
+(author "Taylor, CJ")
+(journal "Technical Report CPSLO-CSC-09-03")
+(pages "116")
+(pdf "https://www.researchgate.net/profile/Eli_Barzilay/publication/252633372_Keyword_and_Optional_Arguments_in_PLT_Scheme/links/53fa47cd0cf20a45496fcd8b.pdf#page=116")
+(abstract "This report describes an implementation of a distributed software transactional memory (DSTM) system in PLT Scheme. The system is built using PLT Scheme's Unit construct to encapsulate the various concerns of the system, and allow for multiple communication layer backends. The front-end API exposes true parallel processing to PLT Scheme programmers, as well as cluster-based computing using a shared namespace for transactional variables. The ramifications of the availability of such a system are considered in the novel context of highly dynamic robot swarm programming scenarios. In robotics programming scenarios, difficulty with expressing complex distributed computing patterns often supersedes raw performance in importance. In fact, for many applications the data to be shared among networked peers is relatively small in size, but the manner in which data sharing is expressed leads to tremendous inefficiencies both at development time and runtime. In an effort to maintain focus on behavior specification, we reduce the emphasis on messaging protocols typically found in distributed robotics software, while providing even greater flexibility in terms of how data is mixed and matched as it moves over the network.")
+
+;; TODO: Also appeared in 2009 Workshop on Scheme and Functional Programming
+(id "kimball2007software")
+(type "inproceedings")
+(title "Software transactions meet first-class continuations")
+(author "Kimball, Aaron")
+(author "Grossman, Dan")
+(booktitle "8th Annual Workshop on Scheme and Functional Programming")
+(year "2007")
+(organization "Citeseer")
+(pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.187.7214&rep=rep1&type=pdf")
+(abstract "Software transactions are a promising technology that make writing correct and efficient shared-memory multithreaded programs easier, but adding transactions to programming languages requires defining and implementing how they interact with existing language features. In this work, we consider how transactions interact with first-class continuations. We demonstrate that different idiomatic uses of continuations require different transactional semantics, so a language supporting transactions and call-with-current-continuation should provide programmers with a way to control these semantics. We present a design meeting this need, addressing both escaping from and reentering the dynamic extent of a transaction. We have implemented our design by modifying Scheme48. We present the most interesting details of the implementation and its performance on some small benchmarks.")
+
+(id "epardaud2004mobile")
+(type "article")
+(title "Mobile reactive programming in ULM")
+(author "Epardaud, Stéphane")
+(journal "on Scheme and Functional Programming")
+(pages "87")
+(year "2004")
+(pdf "ftp://svn.soic.indiana.edu/pub/techreports/TR600.pdf#page=91")
+(abstract "We present the embedding of ULM in Scheme and an implementation of a compiler and virtual machine for it. ULM is a core programming model that allows multi-threaded and distributed programming via strong mobility with a deterministic semantics. We present the multi-threading and distributed primitives of ULM step by step using examples. The introduction of mobility in a Scheme language raises questions about the semantics of variables with respect to migration. We expose the problems and offer two solutions alongside ULM’s network references. We also present our implementation of the compiler, virtual machine and the concurrent threading library written in Scheme.")
+
+(id "wittenberger2002askemos")
+(type "article")
+(title "ASKEMOS-A distributed settlement")
+(author "Wittenberger, J")
+(journal "Proceedings of SSGRR 2002, L'Aquila, Italy")
+(year "2002")
+(pdf "https://pdfs.semanticscholar.org/d0de/0394b13ab14f804d559d65fc5cb2f7e45075.pdf")
+(abstract "This paper presents Askemos, an autonomous, distributed operating system on top of peer to peer networks which significantly raises the level of abstraction in comparison with today’s operating systems. Askemos addresses safe, secure and correct (forge proof) information processing while securing intellectual property in an innovative way." "Askemos defines a virtual machine on document level, which is defined in terms of abstract trees and pure functional transformation of them, both described in XML." "This virtual machine has no physical representation at any single machine. Instead it works distributed among independent components which appear as if they observed it. To achieve that effect, the participating machines compute the process steps of the virtual machine independent and vote among each other about the correct result." "To prevent illegal attacks, there exists no concept of unique resources like superuser rights or unique name spaces.")
+
+(end-group)
+
 (end-group)
