@@ -92,7 +92,7 @@
 
 (id queinnec1998dmeroon)
 (type techreport)
-(title "DMeroon, A Distributed Class-based Causally-Coherent Data Model - General documentation")
+(title "DMeroon: A Distributed Class-based Causally-Coherent Data Model - General documentation - Revision: 1.64")
 (author "Queinnec, Christian")
 (institution "LIP6, Sorbonne University and CNRS")
 (number "039")
@@ -145,7 +145,7 @@
 
 (id queinnec1992concurrent)
 (type inproceedings)
-(title "A concurrent and distributed extension of scheme")
+(title "A concurrent and distributed extension of Scheme")
 (author "Queinnec, Christian")
 (booktitle "International Conference on Parallel Architectures and Languages Europe")
 (pages "431--446")
