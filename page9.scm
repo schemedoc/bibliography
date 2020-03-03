@@ -196,4 +196,53 @@
 
 (end-group)
 
+(group "Distributed Garbage Collection")
+
+;; TODO: Also University of Southampton. Technical Report M96/3. 1996.
+(id moreau1996correctness)
+(type inproceedings)
+(title "Correctness of a distributed-memory model for Scheme")
+(author "Moreau, Luc")
+(booktitle "European Conference on Parallel Processing")
+(pages "615--624")
+(year 1996)
+(month 8)
+(organization "Springer")
+(pdf "https://eprints.soton.ac.uk/252769/1/europar96.pdf")
+(ps "https://www.southampton.ac.uk/~lavm/papers/tech963.ps.gz")
+
+(id moreau1997distributed)
+(type article)
+(title "A Distributed Garbage Collector for NeXeme")
+(author "Moreau, Luc")
+(author "DeRoure, David")
+(journal "Research Journal")
+(year 1997)
+(pdf "https://eprints.soton.ac.uk/409272/1/rj97.pdf")
+(ps "http://www.ecs.soton.ac.uk/~lavm/papers/rj97.ps.gz")
+
+(id moreau1998distributed)
+(type inproceedings)
+(title "A distributed garbage collector with diffusion tree reorganisation and mobile objects")
+(author "Moreau, Luc")
+(booktitle "Proceedings of the third ACM SIGPLAN international conference on Functional programming")
+(pages "204--215")
+(year 1998)
+(month 9)
+(pdf "https://eprints.soton.ac.uk/252754/1/icfp98.pdf")
+(ps "http://www.ecs.soton.ac.uk/~lavm/papers/icfp98.ps.gz")
+
+(id moreau1998hierarchical)
+(type inproceedings)
+(title "Hierarchical distributed reference counting")
+(author "Moreau, Luc")
+(booktitle "Proceedings of the First ACM SIGPLAN International Symposium on Memory Management (ISMM'98)")
+(pages "57--67")
+(year 1998)
+(month 10)
+(pdf "https://eprints.soton.ac.uk/252752/1/ismm98.pdf")
+(ps "http://www.ecs.soton.ac.uk/~lavm/papers/ismm98.ps.gz")
+
+(end-group)
+
 (end-group)
