@@ -115,10 +115,16 @@
 (ps "http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/gendist.ps.gz")
 (abstract "The network now gives the opportunity to combine code and data from everywhere in the world. However, the dominant paradigm is the client/server model where immobile objects with static interfaces can only be used as prescribed by their proprietary site. While this constraint corresponds to understandable industrial programming practices, it negates the point of view of dynamic clients that collect interesting objects and want to confer new behaviors to these collected objects. How to enrich objects \"from the outside\" that is, without access to their source code hence without re-compilation of their defining classes, is the problem addressed by this paper." "Generic functions, à la CLOS, separate classes from behaviors i.e., methods. Roughly said, a generic function is a bag of methods; when a generic function is invoked, the nature (type, class or, structure) of its argument(s) triggers the choice of an appropriate method. Methods are no longer the exclusive property of classes, they are regular functions anyone may define outside classes definitions." "This paper describes how generic functions may be conveniently and not so inefficiently implemented in a distributed world. Section 1 presents some of the constraints of distributed systems. Section 2 recalls the framework of generic functions as well as how we extend them to the distributed world. Significantly, we address the problem of mutual recursion over a bag of methods to which new methods may be adjoined at run-time. We also propose a new feature: call-former-method. Section 3 discusses implementation while Section 4 eventually discusses the incorporation of these results in a real system.")
 
-;; TODO: This paper seems to have disappeared from the net:
-;;
-;; Christian Queinnec. "Bribes de DMeroon". _Actes des journ ees de
-;; recherche sur la Memoire Partagee Repartie_. MPR 96. May 1996.
+(id queinnec1996dmeroon)
+(type article)
+(author "Queinnec, Christian")
+(title "Bribes de DMeroon")
+(journal "Actes des journées de recherche sur la Mémoire Partagée Répartie")
+(pages "51--56")
+(volume "MPR 96")
+(year 1996)
+(month 5)
+(abstract "Cet article est un survol fragmentaire de DMeroon, un projet inachevé de recherche visant à l'écriture d'une bibliothèque multilingue procurant un modèle de mémoire dynamique, distribuée et partagée. Rien n'est original dans cet article fors l'emploi du français. Son contenu provient de 17 et 18 amendé de réflexions décousues mais motivées par l'écriture des programmes composant cette bibliothèque.")
 
 ;; TODO: This paper also appeared in PSLS 95 - Parallel Symbolic
 ;; Langages and Systems. Lecture Notes in Computer Science 1068.
