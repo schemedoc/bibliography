@@ -45,8 +45,12 @@
   (regexp-replace-all (regexp-quote (string old-char)) str new-str))
 
 (define (all-chars->ascii-graphic str)
+  (set! str (the-char->string str #\x0B "ff"))
   (set! str (the-char->string str #\x0C "fi"))
+  (set! str (the-char->string str #\x0E "ffi"))
+  (set! str (the-char->string str #\x0F "*"))
   (set! str (the-char->string str #\x2019 "'"))
+  (set! str (regexp-replace-all "ob ject" str "object"))
   (assert-ascii str)
   str)
 
