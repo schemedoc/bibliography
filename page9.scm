@@ -78,6 +78,7 @@
 (year 1997)
 (month October)
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/dsl97.ps.gz")
+(pdf "https://www.usenix.org/legacy/publications/library/proceedings/dsl97/full_papers/moreau/moreau.pdf")
 (abstract "This paper describes the semantics of Quantum, a language that was specifically designed to control resource consumption of distributed computations, such as mobile agent style applications. In Quantum, computations can be driven by mastering their resource consumption. Resources can be understood as processors cycles, geographical expansion, bandwidth or duration of communications, etc. We adopt a generic view by saying that computations need energy to be performed. Quantum relies on three new primitives that deal with energy. The first primitive creates a tank of energy associated with a computation. Asynchronous notifications inform the user of energy exhaustion and computation termination. The other two primitives allow us to implement suspension and resumption of computations by emptying a tank and by supplying more energy to a tank. The semantics takes the form of an abstract machine with explicit parallelism and energy-related primitives.")
 
 (id moreau1997manual)
