@@ -307,7 +307,7 @@
 
 (id "wittenberger2002askemos")
 (type "article")
-(title "ASKEMOS-A distributed settlement")
+(title "ASKEMOS: A distributed settlement")
 (author "Wittenberger, J")
 (journal "Proceedings of SSGRR 2002, L'Aquila, Italy")
 (year "2002")
