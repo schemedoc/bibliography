@@ -225,6 +225,7 @@
 (organization "Springer")
 (pdf "https://eprints.soton.ac.uk/252769/1/europar96.pdf")
 (ps "https://www.southampton.ac.uk/~lavm/papers/tech963.ps.gz")
+(abstract "We propose a high-level approach to program distributed applications; it is based on the annotation `future` by which the programmer specifies which expressions may be evaluated remotely in parallel. We present the CEKDS-Machine, an abstract machine with a distributed memory, able to evaluate Scheme-like future-based programs. In this paper, we focus on the issue of task migration and prove that task migration is transparent to the user, i.e. task migration does not change the observable behaviour of programs.")
 
 (id moreau1997distributed)
 (type article)
@@ -235,6 +236,7 @@
 (year 1997)
 (pdf "https://eprints.soton.ac.uk/409272/1/rj97.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/rj97.ps.gz")
+(abstract "The remote service request, a form of remote procedure call, and the global pointer, a global naming mechanism, are two features at the heart of Nexus, a library to build distributed systems. NeXeme is an extension of Scheme that fully integrates both concepts in a mostly-functional framework. This short paper describes the distributed garbage collector that we implemented in NeXeme.")
 
 (id moreau1998distributed)
 (type inproceedings)
@@ -246,6 +248,7 @@
 (month 9)
 (pdf "https://eprints.soton.ac.uk/252754/1/icfp98.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/icfp98.ps.gz")
+(abstract "We present a new distributed garbage collection algorithm that is able to reorganise diffusion trees and to support mobile objects. It has a modular design comprising three components: a reliable transport mechanism, a reference-counting based distributed garbage collector for non-mobile objects, and an extra layer that provides mobility. The algorithm is formalised by an abstract machine and is proved to be correct. The safety property ensures that an object may not be reclaimed as long as it is referred to locally or remotely. The liveness property guarantees that unreachable objects will eventually be reclaimed. The mobility property certifies that messages are always forwarded towards more recent mobile object positions.")
 
 (id moreau1998hierarchical)
 (type inproceedings)
@@ -257,6 +260,7 @@
 (month 10)
 (pdf "https://eprints.soton.ac.uk/252752/1/ismm98.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/ismm98.ps.gz")
+(abstract "Massively distributed computing is a challenging problem for garbage collection algorithm designers as it raises the issue of scalability. The high number of hosts involved in a computation can require large tables for reference listing, whereas the lack of information sharing between hosts in a same locality can entail redundant GC traffic. In this paper, we argue that a conceptual hierarchical organisation of massive distributed computations can solve this problem. By conceptual hierarchical organisation, we mean that processors are still able to communicate in a peer to peer manner using their usual communication mechanism, but GC messages will be routed as if processors were organised in hierarchy. We present an extension of a distributed reference counting algorithm that uses such a hierarchical organisation. It allows us to bound table sizes by the number of hosts in a domain, and it allows us to share GC information between hosts in a same locality in order to reduce cross-network GC traffic.")
 
 (end-group)
 
