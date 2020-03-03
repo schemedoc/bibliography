@@ -28,4 +28,5 @@
 (define (writeln x) (write x) (newline))
 
 (define (main . args)
+  (newline)
   (for-each writeln (append-map bibtex-line->lose-forms (read-all-lines))))
