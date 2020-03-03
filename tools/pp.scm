@@ -43,6 +43,22 @@
 
 ;;;
 
+(define (month-name month)
+  (case month
+    ((1) "January")
+    ((2) "February")
+    ((3) "March")
+    ((4) "April")
+    ((5) "May")
+    ((6) "June")
+    ((7) "July")
+    ((8) "August")
+    ((9) "September")
+    ((10) "October")
+    ((11) "November")
+    ((12) "December")
+    (else (error "Bad month:" month))))
+
 (define (read-group-loop form group)
   (cond ((eof-object? form)
          (error "Missing end-group"))
@@ -84,7 +100,7 @@
             (and book (italic book)))
           (string-interpose
            " " (nonemp (let ((month (assoc? 'month entry)))
-                         (and month (symbol->string month)))
+                         (and month (month-name month)))
                        (let ((year (assoc? 'year entry)))
                          (and year (number->string year)))))
           (let ((links (append (map (lambda (url) (linkto url "pdf"))
