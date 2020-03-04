@@ -77,13 +77,12 @@
                          (and month (month-name month)))
                        (let ((year (assoc? 'year entry)))
                          (and year (number->string year)))))
-          (let ((links (append (map (lambda (url) (linkto url "pdf"))
+          (let ((links (append (map (lambda (url) (linkto url "[PDF]"))
                                     (assoc* 'pdf entry))
-                               (map (lambda (url) (linkto url "ps"))
+                               (map (lambda (url) (linkto url "[PS]"))
                                     (assoc* 'ps entry)))))
             (and (not (null? links))
-                 (string-append "Available online: "
-                                (string-interpose " " links))))))
+                 (string-append (string-interpose " " links))))))
    "\n"))
 
 (define (display-entries-as-markdown entries)
