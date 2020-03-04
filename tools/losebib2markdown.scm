@@ -60,6 +60,7 @@
     ((12) "December")
     (else (error "Bad month:" month))))
 
+(define (bold text) (string-append "**" text "**"))
 (define (italic text) (string-append "_" text "_"))
 (define (quoted text) (string-append "\"" text "\""))
 (define (linkto url text) (string-append "[" text "](" url ")"))
@@ -69,7 +70,7 @@
    (string-interpose
     ". " (nonemp
           (string-interpose " and " (assoc* 'author entry))
-          (quoted (assoc1 'title entry))
+          (bold (assoc1 'title entry))
           (let ((book (assoc? 'booktitle entry)))
             (and book (italic book)))
           (string-interpose
