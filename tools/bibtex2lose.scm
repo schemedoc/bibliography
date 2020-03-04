@@ -38,8 +38,12 @@
         (else
          (error "Cannot parse BibTeX line:" line))))
 
-(define (all-whitespace->spaces string)
-  (string-trim-both (regexp-replace-all #/\s+/ string " ")))
+(define (string->paragraphs str)
+  (remove string-null?
+          (map (lambda (paragraph)
+                 (string-trim-both
+                  (regexp-replace-all #/\s+/ paragraph " ")))
+               (string-split str #/\s*?\n\s*?\n\s*/))))
 
 (define (the-char->string str old-char new-str)
   (regexp-replace-all (regexp-quote (string old-char)) str new-str))
@@ -59,8 +63,9 @@
   (set! str (the-char->string str #\x201D "\""))
   (set! str (the-char->string str #\x2026 "..."))
   (set! str (regexp-replace-all "ob ject" str "object"))
-  (assert-ascii str)
   str)
+
+(define (remove-citations str) (regexp-replace-all #/ \[\d+\]/ str ""))
 
 (define (string-blank? str) (not (not (rxmatch #/^\s*$/ str))))
 
@@ -69,14 +74,16 @@
     (let ((new-forms (bibtex-line->lose-forms (car lines))))
       (if (not (null? new-forms))
           (bibtex (cdr lines) (append all-forms new-forms))
-          (let ((abstract
-                 (all-chars->ascii-graphic
-                  (all-whitespace->spaces
-                   (string-join (cdr lines) " ")))))
+          (let ((abstract-paragraphs
+                 (string->paragraphs
+                  (remove-citations
+                   (all-chars->ascii-graphic
+                    (string-join (cdr lines) " "))))))
+            (for-each assert-ascii abstract-paragraphs)
             (append all-forms
                     `((pdf "")
-                      ,@(if (string-null? abstract) '()
-                            `((abstract ,abstract))))))))))
+                      ,@(if (null? abstract-paragraphs) '()
+                            `((abstract ,@abstract-paragraphs))))))))))
 
 (define (writeln x) (write x) (newline))
 
