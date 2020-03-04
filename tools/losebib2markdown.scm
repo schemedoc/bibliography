@@ -93,4 +93,16 @@
   (for-each (lambda (entry) (for-each writeln entry) (newline))
             entries))
 
-(writeln (lose-bib-read-all))
+(define (convert x depth)
+  (cond ((string? (car x))
+         (let ((depth (+ depth 1))
+               (heading (car x)))
+           (disp (make-string depth #\#) " " heading)
+           (newline)
+           (for-each (lambda (xx) (convert xx depth))
+                     (cdr x))))
+        (else
+         (disp (markdown x))
+         (newline))))
+
+(convert (lose-bib-read-all) 0)
