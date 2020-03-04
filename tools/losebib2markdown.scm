@@ -81,8 +81,7 @@
                                     (assoc* 'pdf entry))
                                (map (lambda (url) (linkto url "[PS]"))
                                     (assoc* 'ps entry)))))
-            (and (not (null? links))
-                 (string-append (string-interpose " " links))))))
+            (string-interpose " " links))))
    "\n"))
 
 (define (display-entries-as-markdown entries)
