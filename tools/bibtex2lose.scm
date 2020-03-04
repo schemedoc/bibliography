@@ -1,6 +1,6 @@
 #! /usr/bin/env gosh
 
-(import (scheme base) (scheme write) (gauche base) (srfi 13))
+(import (scheme base) (scheme write) (gauche base) (srfi 1) (srfi 13))
 
 (define (read-all-lines)
   (let loop ((lines '()))
@@ -62,8 +62,10 @@
   (assert-ascii str)
   str)
 
+(define (string-blank? str) (not (not (rxmatch #/^\s*$/ str))))
+
 (define (bibtex-lines+abstract->lose-forms lines)
-  (let bibtex ((lines lines) (all-forms '()))
+  (let bibtex ((lines (drop-while string-blank? lines)) (all-forms '()))
     (let ((new-forms (bibtex-line->lose-forms (car lines))))
       (if (not (null? new-forms))
           (bibtex (cdr lines) (append all-forms new-forms))
