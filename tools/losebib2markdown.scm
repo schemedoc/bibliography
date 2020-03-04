@@ -1,7 +1,7 @@
 #!
 
 (import (scheme base) (scheme write))
-(import (lose-bib-read))
+(import (losebib-read))
 
 (define (disp . xs) (for-each display xs) (newline))
 
@@ -105,4 +105,4 @@
          (disp (markdown x))
          (newline))))
 
-(convert (lose-bib-read-all) 0)
+(convert (losebib-read-all) 0)

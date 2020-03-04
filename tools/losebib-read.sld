@@ -1,5 +1,5 @@
-(define-library (lose-bib-read)
-  (export lose-bib-read-all lose-bib-read-file)
+(define-library (losebib-read)
+  (export losebib-read-all losebib-read-file)
   (import (scheme base) (scheme file) (scheme read))
   (begin
 
@@ -26,10 +26,10 @@
       (let ((group-name (cadr form)))
         (read-group-loop (read) (list group-name))))
 
-    (define (lose-bib-read-all)
+    (define (losebib-read-all)
       (let ((top-group (read-group (read))))
         (unless (eof-object? (read)) (error "Things after end-group"))
         top-group))
 
-    (define (lose-bib-read-file filename)
-      (with-input-from-file filename lose-bib-read-all))))
+    (define (losebib-read-file filename)
+      (with-input-from-file filename losebib-read-all))))
