@@ -37,7 +37,7 @@
           xs))
 
 (define (string-interpose sep strings)
-  (if (null? strings) '()
+  (if (null? strings) ""
       (let loop ((acc (car strings)) (strings (cdr strings)))
         (if (null? strings) acc
             (loop (string-append acc sep (car strings)) (cdr strings))))))
