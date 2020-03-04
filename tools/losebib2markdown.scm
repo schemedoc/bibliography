@@ -85,13 +85,6 @@
             (string-interpose " " links))))
    "\n"))
 
-(define (display-entries-as-markdown entries)
-  (display (string-interpose "\n" (map markdown entries))))
-
-(define (redisplay-entries-as-lose entries)
-  (for-each (lambda (entry) (for-each writeln entry) (newline))
-            entries))
-
 (define (convert x depth)
   (cond ((string? (car x))
          (let ((depth (+ depth 1))
