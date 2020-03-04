@@ -81,7 +81,7 @@
                                     (assoc* 'pdf entry))
                                (map (lambda (url) (linkto url "ps"))
                                     (assoc* 'ps entry)))))
-            (and links
+            (and (not (null? links))
                  (string-append "Available online: "
                                 (string-interpose " " links))))))
    "\n"))
