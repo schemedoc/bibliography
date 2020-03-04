@@ -38,12 +38,21 @@
         (else
          (error "Cannot parse BibTeX line:" line))))
 
-(define (string->paragraphs str)
-  (remove string-null?
-          (map (lambda (paragraph)
-                 (string-trim-both
-                  (regexp-replace-all #/\s+/ paragraph " ")))
-               (string-split str #/\s*?\n\s*?\n\s*/))))
+(define (whitespace->spaces str)
+  (string-trim-both (regexp-replace-all #/\s+/ str  " ")))
+
+(define (lines->paragraphs lines)
+  (define (add para paras)
+    (if (null? para) paras
+        (let ((para (whitespace->spaces (string-join (reverse para) " "))))
+          (if (string-null? para) paras (cons para paras)))))
+  (let loop ((lines lines) (paras '()) (para '()))
+    (cond ((null? lines)
+           (reverse (add para paras)))
+          ((string-blank? (car lines))
+           (loop (cdr lines) (add para paras) '()))
+          (else
+           (loop (cdr lines) paras (cons (car lines) para))))))
 
 (define (the-char->string str old-char new-str)
   (regexp-replace-all (regexp-quote (string old-char)) str new-str))
@@ -75,10 +84,8 @@
       (if (not (null? new-forms))
           (bibtex (cdr lines) (append all-forms new-forms))
           (let ((abstract-paragraphs
-                 (string->paragraphs
-                  (remove-citations
-                   (all-chars->ascii-graphic
-                    (string-join (cdr lines) " "))))))
+                 (map (compose remove-citations all-chars->ascii-graphic)
+                      (lines->paragraphs (cdr lines)))))
             (for-each assert-ascii abstract-paragraphs)
             (append all-forms
                     `((pdf "")
