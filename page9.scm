@@ -490,6 +490,8 @@
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.42.5491&rep=rep1&type=pdf")
 (abstract "This paper presents: (i) an operational semantics, based on a functional framework, for a concurrent and distributed extension of the Scheme programming language, (ii) a coherency protocol taking care of shared mutable objects, (iii) a new coherency protocol to imperatively control hierarchical groups of cooperating tasks. These two protocols do not require broadcast, nor FIFO communications, nor a centralized machine; they allow to manage an unbound number of shared mutable values and groups of tasks. This paper also advocates for the use of a functional continuationbased presentation for these protocols.")
 
+(end-group)
+
 (group "Extension of Scheme for Parallel and Concurrent Programming")
 
 (id ciabrini2004debugging)
