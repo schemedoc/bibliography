@@ -586,7 +586,7 @@
 ;; MIT Technical Report MIT/LCS/TR-402
 (id miller1987multischeme)
 (type phdthesis)
-(title "MultiScheme--a Parallel Processing System Based on MIT Scheme")
+(title "MultiScheme: a Parallel Processing System Based on MIT Scheme")
 (author "Miller, James S")
 (year 1987)
 (month 9)
