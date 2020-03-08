@@ -91,7 +91,7 @@
         (let ((abstract-paragraphs
                (map (compose remove-citations all-chars->ascii-graphic)
                     (lines->paragraphs (cdr lines)))))
-          (for-each assert-ascii abstract-paragraphs)
+          ;;(for-each assert-ascii abstract-paragraphs)
           (append all-forms
                   (maybe-url 'pdf ".pdf" urls)
                   (maybe-url 'ps ".ps" urls)
