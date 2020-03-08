@@ -79,19 +79,36 @@
 
 (define (string-blank? str) (not (not (rxmatch #/^\s*$/ str))))
 
+(define (maybe-url property substring urls)
+  (let ((url (or (find (lambda (url) (string-contains-ci url substring))
+                       urls))))
+    (if url (list (list property url)) '())))
+
+(define (bibtex lines urls all-forms)
+  (let ((new-forms (bibtex-line->lose-forms (car lines))))
+    (if (not (null? new-forms))
+        (bibtex (cdr lines) urls (append all-forms new-forms))
+        (let ((abstract-paragraphs
+               (map (compose remove-citations all-chars->ascii-graphic)
+                    (lines->paragraphs (cdr lines)))))
+          (for-each assert-ascii abstract-paragraphs)
+          (append all-forms
+                  (maybe-url 'pdf ".pdf" urls)
+                  (maybe-url 'ps ".ps" urls)
+                  (maybe-url 'html ".html" urls)
+                  (if (null? abstract-paragraphs) '()
+                      `((abstract ,@abstract-paragraphs))))))))
+
 (define (bibtex-lines+abstract->lose-forms lines)
-  (let bibtex ((lines (drop-while string-blank? lines)) (all-forms '()))
-    (let ((new-forms (bibtex-line->lose-forms (car lines))))
-      (if (not (null? new-forms))
-          (bibtex (cdr lines) (append all-forms new-forms))
-          (let ((abstract-paragraphs
-                 (map (compose remove-citations all-chars->ascii-graphic)
-                      (lines->paragraphs (cdr lines)))))
-            (for-each assert-ascii abstract-paragraphs)
-            (append all-forms
-                    `((pdf "")
-                      ,@(if (null? abstract-paragraphs) '()
-                            `((abstract ,@abstract-paragraphs))))))))))
+  (let prelude ((lines lines) (urls '()))
+    (cond ((null? lines)
+           '())
+          ((string-blank? (car lines))
+           (prelude (cdr lines) urls))
+          ((string-contains (car lines) "://")
+           (prelude (cdr lines) (cons (string-trim-both (car lines)) urls)))
+          (else
+           (bibtex lines urls '())))))
 
 (define (writeln x) (write x) (newline))
 
