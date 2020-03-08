@@ -71,6 +71,7 @@
   (set! str (the-char->string str #\x201C "\""))
   (set! str (the-char->string str #\x201D "\""))
   (set! str (the-char->string str #\x2026 "..."))
+  (set! str (regexp-replace-all (regexp-quote "{\\'e}") str "é"))
   (set! str (regexp-replace-all "ob ject" str "object"))
   str)
 
