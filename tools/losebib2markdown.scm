@@ -83,7 +83,12 @@
                                (map (lambda (url) (linkto url "[PS]"))
                                     (assoc* 'ps entry)))))
             (string-interpose " " links))))
-   "\n"))
+   "\n"
+   "\n"
+   (let ((abstract (assoc* 'abstract entry)))
+     "Abstract: " (string-interpose " " abstract))
+   "\n"
+   ))
 
 (define (convert x depth)
   (cond ((string? (car x))
