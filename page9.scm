@@ -902,6 +902,7 @@
 (month 5)
 (organization "Springer")
 (pdf "https://link.springer.com/content/pdf/10.1007/3-540-59293-8_231.pdf")
+(pdf "https://eprints.soton.ac.uk/252767/1/Non-speculative_and_Upward_Invocation_of_Continuations_in_Parallel_Language.pdf"
 (abstract "A method of preserving the sequential semantics in parallel programs with first-class continuations is to invoke continuations non-speculatively. This method, which prevents a continuation from being invoked as long as its invocation can infringe the sequential semantics, reduces parallelism by the severe conditions that it imposes~ especially on upward uses. In this paper, we present new conditions for invoking continuations in an upward way and both preserving the sequential semantics and providing parallelism. This new approach is formalised in the PCKS-machine, which is proved to be correct by showing that it has the same observational equivalence theory as the sequential semantics.")
 
 (end-group)
