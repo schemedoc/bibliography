@@ -202,6 +202,7 @@
 (pages "704--739")
 (year 1995)
 (publisher "ACM New York, NY, USA")
+(scheme-id kali)
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/toplas95.ps.gz")
 (pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2885348_Higher-Order_Distributed_Objects/links/544008b50cf21227a11ba1ae.pdf")
 (abstract "We describe a distributed implementation of Scheme that permits efficient transmission of higherorder objects such as closures and continuations. The integration of distributed communication facilities within a higher-order programming language engenders a number of new abstractions and paradigms for distributed computing. Among these are user-specified load-balancing and migration policies for threads, incrementally linked distributed computations, and parameterized client-server applications. To our knowledge, this is the first distributed dialect of Scheme (or a related language) that addresses lightweight communication abstractions for higher-order objects.")
@@ -280,6 +281,7 @@
 (author "Taylor, CJ")
 (journal "Technical Report CPSLO-CSC-09-03")
 (pages "116")
+(scheme-id plt-scheme)
 (pdf "https://www.researchgate.net/profile/Eli_Barzilay/publication/252633372_Keyword_and_Optional_Arguments_in_PLT_Scheme/links/53fa47cd0cf20a45496fcd8b.pdf#page=116")
 (abstract "This report describes an implementation of a distributed software transactional memory (DSTM) system in PLT Scheme. The system is built using PLT Scheme's Unit construct to encapsulate the various concerns of the system, and allow for multiple communication layer backends. The front-end API exposes true parallel processing to PLT Scheme programmers, as well as cluster-based computing using a shared namespace for transactional variables. The ramifications of the availability of such a system are considered in the novel context of highly dynamic robot swarm programming scenarios. In robotics programming scenarios, difficulty with expressing complex distributed computing patterns often supersedes raw performance in importance. In fact, for many applications the data to be shared among networked peers is relatively small in size, but the manner in which data sharing is expressed leads to tremendous inefficiencies both at development time and runtime. In an effort to maintain focus on behavior specification, we reduce the emphasis on messaging protocols typically found in distributed robotics software, while providing even greater flexibility in terms of how data is mixed and matched as it moves over the network.")
 
@@ -316,7 +318,7 @@
 
 (id dionne1996taxonomy)
 (type inproceedings)
-(title "A Taxonomy of Distributed Debuggers Based on Execution Replay.")
+(title "A Taxonomy of Distributed Debuggers Based on Execution Replay")
 (author "Dionne, Carl")
 (author "Feeley, Marc")
 (author "Desbien, Jocelyn")
