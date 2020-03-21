@@ -138,6 +138,7 @@
 (pages "295--309")
 (year 1995)
 (organization "Springer")
+(pdf-sha1 "4a520d0bdc016e0621a469399dde3f0b4b6c540c")
 (pdf "http://christian.queinnec.org/PDF/psls.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/psls.ps.gz")
 (abstract "DMeroon is a library of C functions that provides a data model above a coherently distributed shared memory. DMeroon allows users to statically or dynamically create new classes, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, migrating and sharing objects, local and global garbage collections. This document provides an overview of DMeroon.")
@@ -175,6 +176,7 @@
 (author "Queinnec, Christian")
 (year 1992)
 (publisher "Citeseer")
+(pdf-sha1 "a122aa9e4ced777966b6f848bece8d5e0a848cae")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.8810&rep=rep1&type=pdf")
 (abstract "This paper exposes an overview of a distributed Lisp system, called TransPive, designed to run on a loosely-coupled multi-processor system." "The main goal of the system is to provide a transparent distributed programming environment, sharing data structures using remote pointers, as a platform to prototype distributed algorithms and applications." "The TransPive message passing primitives create the remote pointers, with local caches for the object's value (to improve performance of read accesses). A protocol to invalidate the caches is invoked when a modifier is applied. A Distributed Garbage Collector is included on TransPive to reclaim distant pointed objects. A simple mechanism to distribute the computation over the system is also provided." "All the mechanisms have been implemented without any operating system support (as virtual memory), and so they are portable to any reliable message-passing distributed environment. In particular, the first version has been implemented on a Transputer network." "The paper is an overview of the remote pointer mechanism, the memory structures and protocols used to share data, the garbage collector and the remote process creation primitives.")
 
@@ -203,6 +205,7 @@
 (year 1995)
 (publisher "ACM New York, NY, USA")
 (scheme-id kali)
+(pdf-sha1 "5079ee5c9af80022661138658a0f101457ca9c4c")
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/toplas95.ps.gz")
 (pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2885348_Higher-Order_Distributed_Objects/links/544008b50cf21227a11ba1ae.pdf")
 (abstract "We describe a distributed implementation of Scheme that permits efficient transmission of higherorder objects such as closures and continuations. The integration of distributed communication facilities within a higher-order programming language engenders a number of new abstractions and paradigms for distributed computing. Among these are user-specified load-balancing and migration policies for threads, incrementally linked distributed computations, and parameterized client-server applications. To our knowledge, this is the first distributed dialect of Scheme (or a related language) that addresses lightweight communication abstractions for higher-order objects.")
@@ -230,6 +233,7 @@
 (year 1996)
 (month 8)
 (organization "Springer")
+(pdf-sha1 "6f2c71a2614f7ba305812e3194e2806dd7175197")
 (pdf "https://eprints.soton.ac.uk/252769/1/europar96.pdf")
 (ps "https://www.southampton.ac.uk/~lavm/papers/tech963.ps.gz")
 (abstract "We propose a high-level approach to program distributed applications; it is based on the annotation `future` by which the programmer specifies which expressions may be evaluated remotely in parallel. We present the CEKDS-Machine, an abstract machine with a distributed memory, able to evaluate Scheme-like future-based programs. In this paper, we focus on the issue of task migration and prove that task migration is transparent to the user, i.e. task migration does not change the observable behaviour of programs.")
@@ -253,6 +257,7 @@
 (pages "204--215")
 (year 1998)
 (month 9)
+(pdf-sha1 "a33214d67ca81cea5ac9e5631d8235600867447f")
 (pdf "https://eprints.soton.ac.uk/252754/1/icfp98.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/icfp98.ps.gz")
 (abstract "We present a new distributed garbage collection algorithm that is able to reorganise diffusion trees and to support mobile objects. It has a modular design comprising three components: a reliable transport mechanism, a reference-counting based distributed garbage collector for non-mobile objects, and an extra layer that provides mobility. The algorithm is formalised by an abstract machine and is proved to be correct. The safety property ensures that an object may not be reclaimed as long as it is referred to locally or remotely. The liveness property guarantees that unreachable objects will eventually be reclaimed. The mobility property certifies that messages are always forwarded towards more recent mobile object positions.")
@@ -265,6 +270,7 @@
 (pages "57--67")
 (year 1998)
 (month 10)
+(pdf-sha1 "c50668bef4302dd1df2af6c8ca2acbc1103668bc")
 (pdf "https://eprints.soton.ac.uk/252752/1/ismm98.pdf")
 (ps "http://www.ecs.soton.ac.uk/~lavm/papers/ismm98.ps.gz")
 (abstract "Massively distributed computing is a challenging problem for garbage collection algorithm designers as it raises the issue of scalability. The high number of hosts involved in a computation can require large tables for reference listing, whereas the lack of information sharing between hosts in a same locality can entail redundant GC traffic. In this paper, we argue that a conceptual hierarchical organisation of massive distributed computations can solve this problem. By conceptual hierarchical organisation, we mean that processors are still able to communicate in a peer to peer manner using their usual communication mechanism, but GC messages will be routed as if processors were organised in hierarchy. We present an extension of a distributed reference counting algorithm that uses such a hierarchical organisation. It allows us to bound table sizes by the number of hosts in a domain, and it allows us to share GC information between hosts in a same locality in order to reduce cross-network GC traffic.")
@@ -282,6 +288,7 @@
 (journal "Technical Report CPSLO-CSC-09-03")
 (pages "116")
 (scheme-id plt-scheme)
+(pdf-sha1 "6b32dd7960d6645bd854b117b4eeacc916e9e7e4")
 (pdf "https://www.researchgate.net/profile/Eli_Barzilay/publication/252633372_Keyword_and_Optional_Arguments_in_PLT_Scheme/links/53fa47cd0cf20a45496fcd8b.pdf#page=116")
 (abstract "This report describes an implementation of a distributed software transactional memory (DSTM) system in PLT Scheme. The system is built using PLT Scheme's Unit construct to encapsulate the various concerns of the system, and allow for multiple communication layer backends. The front-end API exposes true parallel processing to PLT Scheme programmers, as well as cluster-based computing using a shared namespace for transactional variables. The ramifications of the availability of such a system are considered in the novel context of highly dynamic robot swarm programming scenarios. In robotics programming scenarios, difficulty with expressing complex distributed computing patterns often supersedes raw performance in importance. In fact, for many applications the data to be shared among networked peers is relatively small in size, but the manner in which data sharing is expressed leads to tremendous inefficiencies both at development time and runtime. In an effort to maintain focus on behavior specification, we reduce the emphasis on messaging protocols typically found in distributed robotics software, while providing even greater flexibility in terms of how data is mixed and matched as it moves over the network.")
 
@@ -325,6 +332,7 @@
 (booktitle "PDPTA")
 (pages "203--214")
 (year 1996)
+(pdf-sha1 "9d04784c23cbdc81dbcc4aea89f640287c31ed95")
 (pdf "https://www-labs.iro.umontreal.ca/~feeley/papers/DionneFeeleyDesbiensPDPTA96.pdf")
 (abstract "This paper presents a taxonomy of parallel and distributed debuggers based on execution replay. Programming of distributed and parallel systems is a complex task. Amongst the many factors contributing to this complexity, the nondeterminacy of these systems is an important one. Execution replay is a technique developed to facilitate the debugging of nondeterministic programs. Execution replay has very broad applications and not every algorithm is applicable in every situation. This taxonomy provides a precise classification of replay debuggers using nine criteria. From this classification, it is easier to determine a debugger's scope of application, outline its strengths and weaknesses and compare it with others. This taxonomy is illustrated and validated using a collection of existing replay debuggers.")
 
@@ -351,6 +359,7 @@
 (pages "177--194")
 (year 1996)
 (organization "Springer")
+(pdf-sha1 "2600ea553c834857e51cd0f2fb219924a33306e9")
 (pdf "https://www.researchgate.net/profile/Jan_Vitek/publication/2238775_Lecture_Notes_in_Computer_Science/links/00b7d51a922e575c1e000000.pdf")
 
 (id sumii2000implementation)
@@ -526,6 +535,7 @@
 (pages "501--538")
 (year 1985)
 (publisher "ACM New York, NY, USA")
+(pdf-sha1 "b25836d60f8598f823dc245b65f5b8653dad81f6")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.97.1841&rep=rep1&type=pdf")
 (abstract "Multilisp is a version of the Lisp dialect Scheme extended with constructs for parallel execution. Like Scheme, Multilisp is oriented toward symbolic computation. Unlike some parallel programming languages, Multilisp incorporates constructs for causing side effects and for explicitly introducing parallelism. The potential complexity of dealing with side effects in a parallel context is mitigated by the nature of the parallelism constructs and by support for abstract data types: a recommended Multilisp programming style is presented which, if followed, should lead to highly parallel, easily understandable programs." "Multilisp is being implemented on the 32-processor Concert multiprocessor; however, it is ultimately intended for use on larger multiprocessors. The current implementation, called Concert Multilisp, is complete enough to run the Multilisp compiler itself and has been run on Concert prototypes including up to eight processors. Concert Multilisp uses novel techniques for task scheduling and garbage collection. The task scheduler helps control excessive resource utilization by means of an unfair scheduling policy; the garbage collector uses a multiprocessor algorithm based on the incremental garbage collector of Baker.")
 
@@ -550,6 +560,7 @@
 (booktitle "Proceedings of the 1990 ACM conference on LISP and functional programming")
 (pages "185--197")
 (year 1990)
+(pdf-sha1 "9ba200f867c8cea7b77d5ae1681008d7e5c98ad1")
 (pdf "https://people.csail.mit.edu/riastradh/t/halstead90lazy-task.pdf")
 (abstract "Many parallel algorithms are naturally expressed at a fine level of granularity, often finer than a MIMD parallel system can exploit efficiently. Most builders of parallel systems have looked to either the programmer or a parallelizing compiler to increase the granularity of such algorithms. In this paper we explore a third approach to the granularity problem by analyzing two strategies for combining parallel tasks dynamically at run-time. We reject the simpler load-based inlining method, where tasks are combined based on dynamic load level, in favor of the safer and more robust lazy task creation method, where tasks are created only retroactively as processing resources become available." "These strategies grew out of work on Mul-T, an efficient parallel implementation of Scheme, but could be used with other applicative languages as well. We describe our Mul-T implementations of lazy task creation for two contrasting machines, and present performance statistics which show the method's effectiveness. Lazy task creation allows efficient execution of naturally expressed algorithms of a substantially finer grain than possible with previous parallel Lisp systems.")
 
@@ -653,6 +664,7 @@
 (pages "55--81")
 (year 1992)
 (publisher "ACM New York, NY, USA")
+(pdf-sha1 "e247d91f5bf5780beaa56718cdbb19e8c417e5c7")
 (pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2819936_A_Customizable_Substrate_for_Concurrent_Languages/links/544008b60cf21227a11ba1af.pdf")
 (ps "https://www.cs.purdue.edu/homes/suresh/papers/pldi92.ps.gz")
 (abstract "We describe an approach to implementing a wide-range of concurrency paradigms in high-level (symbolic) programming languages. The focus of our discussion is sting, a dialect of Scheme, that supports lightweight threads of control and virtual processors as first-class objects. Given the significant degree to which the behavior of these objects may be customized, we can easily express a variety of concurrency paradigms and linguistic structures within a common framework without loss of efficiency. Unlike parallel systems that rely on operating system services for managing concurrency, sting implements concurrency management entirely in terms of Scheme objects and procedures. It, therefore, permits users to optimize the runtime behavior of their applications without requiring knowledge of the underlying runtime system. This paper concentrates on (a) the implications of the design for building asynchronous concurrency structures, (b) organizing large-scale concurrent computations, and (c) implementing robust programming environments for symbolic computing.")
@@ -758,6 +770,7 @@
 (number "2")
 (pages "109--121")
 (year 1987)
+(pdf-sha1 "bb29a0fbf442b1a3c6b21461111d8e6b8ef65ea8")
 (pdf "ftp://jcmc.indiana.edu/pub/techreports/TR178.pdf")
 (abstract "The need for a programming language abstraction for timed preemption is argued, and several possibilities for such an abstraction are presented. One, called engines, is adopted. Engines are an abstraction of bounded computation, not a process abstraction in the usual sense. However, in conjuction with first class continuations, engines allow a language to be extended with time-sharing implementations for a variety of process abstraction facilities. We present a direct implementation of hiaton streams. Engine nesting refers to the initiation of an engine computation by an already running engine. We consider the need for engine nesting and show how it may be accomplished in a manner that charges a parent engine for the computation of its offspring. We conclude by discussing the importance of simple and general abstractions such as engines.")
 
@@ -769,6 +782,7 @@
 (booktitle "Proceedings of the 1984 ACM Symposium on LISP and functional programming")
 (pages "18--24")
 (year 1984)
+(pdf-sha1 "8cf328f53f0857cee06b986f5ffb75c5d4b49643")
 (pdf "ftp://ftp.extreme.indiana.edu/pub/techreports/TR159.pdf")
 (abstract "Engines are a new programming language abstraction for timed preemption. In conjunction with first class continuations, engines allow the language to be extended with a time sharing implementation of process abstraction facilities. To illustrate engine programming techniques, we implement a round-robin process scheduler. The importance of simple but powerful primitives such as engines is discussed.")
 
@@ -789,6 +803,7 @@
 (booktitle "Proceedings of the 1980 ACM conference on LISP and functional programming")
 (pages "19--28")
 (year 1980)
+(pdf-sha1 "281e09eaf471f73988021f199e1e72cfebf7461c")
 (pdf "ftp://jcmc.indiana.edu/pub/techreports/TR90.pdf")
 (abstract "ABSTRACT: Any multiprocessing facility must include three features: elementary exclusion, data protection, and process saving. While elementary exclusion must rest on some hardware facility (e.g. a test-and-set instruction), the other two requirements are fulfilled by features already present in applicative languages. Data protection may be obtained through the use of procedures (closures or funargs), and process saving may be obtained through the use of the CATCH operator. The use of CATCH, in particular, allows an elegant treatment of process saving which is much more tractable than the ones found in the operating systems literature." "We demonstrate these techniques by writing the kernel and some modules for a multiprocessing system. The kernel is very small. Many functions which one would normally expect to find inside the kernel are completely decentralized. We consider the implementation of other schedulers, interrupts, and the implications of these ideas for language design.")
 
@@ -857,6 +872,7 @@
 (pages "125--135")
 (year 1993)
 (month 6)
+(pdf-sha1 "571fc7595fdb74474825136b47f323afe66a84a7")
 (pdf "https://eprints.soton.ac.uk/252763/1/Sound_rules_for_parallel_Evaluation_of_a_Functional_Language_with_callcc.pdf?keepThis=true")
 (abstract "Observationally equivalent programs are programs which are indistinguishable in all contexts, as far as their termination property is concerned. In this paper, we present rules pre- serving observational equivalence, for the parallel evaluation of programs using call/cc. These rules allow the capture of continuations in any applicative context and they prevent from aborting the whole computation when a continuation is applied in the extent of the call/cc by which it was reified. As a consequence, these results prove that one can design a functional language with first-class continuations which has transparent constructs for parallelism.")
 
@@ -879,6 +895,7 @@
 (year 1995)
 (month 6)
 (school "Université de Liège, Faculté des sciences appliquées")
+(pdf-sha1 "ad93e180a337c9a89ebc27046eab984966f7d948")
 (pdf "https://pdfs.semanticscholar.org/ad93/e180a337c9a89ebc27046eab984966f7d948.pdf")
 (abstract "The interpreter continuation is the computation that remains to be performed after evaluating a given expression. Some programming languages provide the programmer with two facilities to act on the interpreter continuation: the capture and the invocation. The capture of a continuation consists in packaging up the current interpreter continuation as a rst-class object so that it can be manipulated like any other object. The invocation of a continuation discards the current interpreter continuation and resumes the computation with the invoked continuation." "The constructs fork and pcall explicitly indicate where parallel evaluations can proceed. These constructs are expected to be transparent: a program using such constructs is supposed to return the same result as in their absence. Traditionally, the semantics of continuations is formulated in a sequential framework; the addition of parallelism to a language with rst-class continuations requires to specify a new semantics for continuations. This is the issue addressed in our dissertation, and these are its ma jor contributions." "* We set up a semantics for rst-class continuations such that the meaning of a parallel program is the same as the sequential meaning of the program without the constructs for parallelism. This semantics is formalised in a reduction system that is an extension of the \x15;-calculus." "* The proposed semantics is proved to be sound with respect to the sequential semantics. The soundness criterion used in this proof is the notion of observational equivalence." "* We implement this semantics on an abstract machine that models a MIMD architecture with a shared memory, and we prove the correctness of this implementation.")
 
@@ -944,6 +961,7 @@
 (pages "146--156")
 (year 1996)
 (month 5)
+(pdf-sha1 "5f515894cab1b9c23033cfa53ed179b96fd126e9")
 (pdf "https://eprints.soton.ac.uk/252761/1/icfp96.pdf")
 (abstract "We present the formal semantics of future in a Scheme-like language which has both side-effects and first-class continu- ations. Correctness is established by proving that programs annotated by future have the same observable behaviour as their non-annotated counterparts, even though evaluation may be parallel.")
 
@@ -954,6 +972,7 @@
 (booktitle "8th International Conference in Systems Research Informatics and Cybernetics (InterSymp'96)")
 (year 1996)
 (month 8)
+(pdf-sha1 "877b474822b321a1c24182aa2fa15f36c9af4356")
 (pdf "https://nms.kcl.ac.uk/luc.moreau/papers/intersymp96.pdf")
 (abstract "future is an annotation that indicates which expressions of a program may be evaluated in parallel. By de nition, future is transparent, i.e. annotated programs return the same results as in the absence of annotations. In such a framework, the interaction of parallelism and rst-class continuations has been considered as a delicate matter for a long time. Indeed, unrestricted parallelism and rst-class continuations may lead to non-deterministic programs, which is contradictory to the notion of annotation. In this paper, we overview the formal semantics of future and rst-class continuations. The semantics is an abstract machine that models a parallel computer with a shared memory.")
 
@@ -1005,6 +1024,7 @@
 (author "Felleisen, Matthias")
 (year 1994)
 (publisher "Rice University, Department of Computer Science")
+(pdf-sha1 "7ab8b9e51b305d4ab7809cad2be54eeeabbad254")
 (pdf "https://scholarship.rice.edu/bitstream/handle/1911/96445/TR94-238.pdf?sequence=1&isAllowed=y")
 (ps "http://www.ccs.neu.edu/scheme/pubs/tr94-238.ps.gz")
 (abstract "The future annotation introduced by MultiLisp provides a simple method for taming the implicit parallelism of functional programs. Prior research on futures has concentrated on implementation and design issues, and has largely ignored the development of a semantic characterization of futures. This paper presents four operational semantics for an idealized functional language with futures with varying degrees of intensionality. The first semantics defines future to be a semantically-transparent annotation. The second semantics interprets a future expression as a potentially parallel task. The third semantics explicates the coordination of parallel tasks and the need for touch operations on placeholder-strict arguments to certain primitive operations by introducing placeholder objects. The fourth and last semantics is a low-level refinement of the third semantics, which explicates just enough information to permit the smooth derivation of program analyses. The paper includes proofs showing the equivalence of these semantics.")
@@ -1040,6 +1060,7 @@
 (year 1983)
 (month 8)
 (publisher "Computer Science Department, Indiana University")
+(pdf-sha1 "15028b48f154817babf7f42736c3e89cae8966b9")
 (pdf "ftp://svn.soic.indiana.edu/pub/techreports/TR147.pdf")
 (abstract "We consider language modeling using Scheme, an applicative order, lexically scoped dialect of Lisp. In Lisp, programs are represented by list structures. By representing programs of other languages as list structures with carefully placed keywords it is possible to define the keywords as either functions or syntactic extensions. Proper consideration of the lexical scoping yields even more control than would be expected. As an example of this approach we prototype Data Flow, a concurrent computation system, by expanding each actor or arc into a function invocation and by expanding a network into a Scheme function that is compiled and executed. This approach avoids the familiar interpretation step used in most prototyping approaches, yielding improved performance.")
 
@@ -1107,6 +1128,7 @@
 (year 1994)
 (month 4)
 (publisher "Springer")
+(pdf-sha1 "667cbfe950c4db4837bf7650ca183acabaaf4186")
 (pdf "https://www.researchgate.net/profile/James_Philbin/publication/2419746_High-Level_Abstractions_for_Efficient_Concurrent_Systems/links/0deec52d302c7cdfcf000000.pdf")
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/plsa94.ps.gz")
 (abstract "Parallel symbolic algorithms exhibit characteristics that make their efficient implementation on current multiprocessor platforms difficult: data is generated dynamically and often have irregular shape and density, data sets typically consist of objects of many different types and structure, the natural unit of concurrency is often much smaller than can be efficiently supported on stock hardware, efficient scheduling, migration and load-balancing strategies vary widely among different algorithms, and sensible decomposition of the program into parallel threads of control often cannot be achieved by mere examination of the source text.")
