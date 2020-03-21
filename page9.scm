@@ -425,7 +425,7 @@
 (ps "https://www.cs.purdue.edu/homes/suresh/papers/tppp94.ps.gz")
 (abstract "Temporal and spatial locality are signi cant concerns in the design and implementation of any realistic parallel or distributed computing system. Temporal locality is concerned with relations among objects that share similar lifetimes and birth dates; spatial locality is concerned with relations among ob jects that share information. Exploiting temporal locality can lead to improved memory behavior; exploiting spatial locality can lead to improved communication behavior. Linguistic, compiler, and runtime support for locality issues is especially important for unstructured symbolic computations in which lifetimes and sharing properties of ob jects are not readily apparent. Language abstractions for spatial and temporal locality include mechanisms for grouping related threads of control, allowing programs exibility to map computations onto virtual processors, reusing dynamic contexts efficiently, and permitting asynchronous garbage collection across multiple processors. These abstractions give users and implementations a large degree of mobility to exploit inherent locality properties found within many dynamic parallel applications. We have investigated a number of these abstractions within a high-level language framework and within compilers targeted for such a framework. In this paper, we discuss several of these abstractions and justify their importance")
 
-(id jagannathanexpressing)
+(id jagannathan1991expressing)
 (type article)
 (title "Expressing Fine-Grained Parallelism Using Distributed Data Structures")
 (author "Jagannathan, Suresh")
@@ -594,7 +594,7 @@
 
 (id queinnec1991crystal)
 (type inproceedings)
-(title "Crystal Scheme, A Language for Massively Parallel Machines")
+(title "Crystal Scheme: A Language for Massively Parallel Machines")
 (author "Queinnec, Christian")
 (booktitle "Second Symposium on High Performance Computing")
 (pages "91--102")
@@ -822,7 +822,7 @@
 (pdf "https://www.eecis.udel.edu/~cavazos/cisc879-spring2008/papers/cps-threads.pdf")
 (abstract "It is well known [Wand] that concurrency can be expressed within languages that provide a continuation type. However, a number of misconceptions persist regarding the relationship between threads and continuations. I discuss the proper relationship between these two objects, and present a model for directly expressing concurrency using continuations. The model is designed to support systems programming, and has several novel features: it is synchronous, preemptable, and fully virtualisable, allowing schedulers to be written by unprivileged users that are indistinguishable from top-level schedulers that actually control access to the hardware resources.")
 
-(id moreau92programming)
+(id moreau1992programming)
 (type article)
 (title "Programming in a Parallel Functional Language with Continuations")
 (author "Moreau, Luc")
