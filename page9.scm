@@ -2,7 +2,7 @@
 
 (group "Scheme Dialects for Distributed Programming")
 
-(id germain2006concurrency)
+(id germain2006termite)
 (type inproceedings)
 (title "Concurrency oriented programming in Termite Scheme")
 (author "Germain, Guillaume")
@@ -18,7 +18,7 @@
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.125.1527&rep=rep1&type=pdf")
 (abstract "Termite Scheme is a variant of Scheme intended for distributed computing. It offers a simple and powerful concurrency model, inspired by the Erlang programming language, which is based on a message-passing model of concurrency." "Our system is well suited for building custom protocols and abstractions for distributed computation. Its open network model allows for the building of non-centralized distributed applications." "The possibility of failure is reflected in the model, and ways to handle failure are available in the language. We exploit the existence of first class continuations in order to allow the expression of high-level concepts such as process migration." "We describe the Termite model and its implications, how it compares to Erlang, and describe sample applications built with Termite. We conclude with a discussion of the current implementation and its performance.")
 
-(id pierard2007towards)
+(id pierard2007mobit)
 (type inproceedings)
 (title "Towards a portable and mobile Scheme interpreter")
 (author "Piérard, Adrien")
@@ -46,7 +46,7 @@
 (abstract "This dissertation makes four contributions towards supporting distributed, multiuser applications over open networks." "Dreme, a distributed dialect of the Scheme language in which all first-class language objects are mobile in the network. In particular, various distributed topologies, such as client/server and peer-to-peer, can be created by migrating closures with overlapping scopes around the network, correct inter-process communication being assured by Scheme's lexical scoping rules and network wide addressing. Threads of control are passed around through first-class distributed continuations." "A User Interface toolkit for coordinating events in multi-threaded, multi-user applications by organizing continuation callbacks into nested lexical scopes. Each event has certain attributes, such as synchronous/asynchronous. Certain events create new scopes with new events. Continuation callbacks allow both synchronous events which return values to their callers, and asynchronous ones. Application needn't be spread throughout the application, as with applications using an event-loop." "A distributed garbage collection algorithm that collects all cycles on an open network. The basic algorithm depends on maintaining the inverse reference graph (IRG) among network nodes (i.e., if a->b is in the regular graph, b->a is in the IRG). A single IRG traversal from any object determines the status of each object touched. Communication is decentralized (any object can choose to determine its status), garbage is touched O(1) times (in the absence of failures), it is fault-tolerant, and can handle malicious or faulty neighbors. Each operation uses messages linear in the size of the IRG. Overlapping operations perform like parallel quick sort." "An approach to using the Standard Generalized Markup Language (SGML) over the network to support distributed GUIs, intelligent clients, and mobile agents. SGML is a meta-grammar for creating domain specific document markup languages to which a variety of semantics (display, reading/writing databases, etc.) can be applied. The document, its grammar, and some semantics, are retrieved over the network. Applications normally create interfaces directly out of graphic objects to communicate with the user. However, if the interface has some semantics (and is parsable), a computational agent can interpret the interface and talk directly to the application on behalf of the human.")
 
 ;; MIT AI Lab Technical Report AITR-1627.
-(id bawden1993implementing)
+(id bawden1993linear)
 (type phdthesis)
 (title "Implementing distributed systems using linear naming")
 (author "Bawden, Alan")
@@ -70,7 +70,7 @@
 (pdf "https://eprints.soton.ac.uk/252758/1/rsr_europar97.pdf")
 (abstract "The remote service request, a form of remote procedure call, and the global pointer, a global naming mechanism, are two features at the heart of Nexus, a library for building distributed systems. NeXeme is an extension of Scheme that fully integrates both concepts in a mostly-functional framework, hence providing an expressive language for distributed computing. This paper presents a semantics for this Scheme extension, and also describes a NeXeme implementation, including its distributed garbage collector.")
 
-(id moreau1997design)
+(id moreau1997quantum)
 (type inproceedings)
 (title "Design and Semantics of Quantum: A Language to Control Resource Consumption in Distributed Computing")
 (author "Moreau, Luc")
@@ -82,7 +82,7 @@
 (pdf "https://www.usenix.org/legacy/publications/library/proceedings/dsl97/full_papers/moreau/moreau.pdf")
 (abstract "This paper describes the semantics of Quantum, a language that was specifically designed to control resource consumption of distributed computations, such as mobile agent style applications. In Quantum, computations can be driven by mastering their resource consumption. Resources can be understood as processors cycles, geographical expansion, bandwidth or duration of communications, etc. We adopt a generic view by saying that computations need energy to be performed. Quantum relies on three new primitives that deal with energy. The first primitive creates a tank of energy associated with a computation. Asynchronous notifications inform the user of energy exhaustion and computation termination. The other two primitives allow us to implement suspension and resumption of computations by emptying a tank and by supplying more energy to a tank. The semantics takes the form of an abstract machine with explicit parallelism and energy-related primitives.")
 
-(id moreau1997manual)
+(id moreau1997nexememanual)
 (type techreport)
 (title "NeXeme: A distributed Scheme based on Nexus (Reference Manual and User's Guide)")
 (author "Moreau, Luc")
@@ -92,7 +92,7 @@
 (ps "http://www.ecs.soton.ac.uk/~lavm/NeXeme/man/ug.ps")
 (abstract "The remote service request, a form of remote procedure call, and the global pointer, a global naming mechanism, are two features at the heart of Nexus, a library for building distributed systems. NeXeme is an extension of Scheme that fully integrates both concepts in a mostly-functional framework, hence providing an expressive language for distributed computing. This document is both NeXeme reference manual and user's guide.")
 
-(id queinnec1998dmeroon)
+(id queinnec1998dmeroonmanual)
 (type techreport)
 (title "DMeroon: A Distributed Class-based Causally-Coherent Data Model - General documentation - Revision: 1.64")
 (author "Queinnec, Christian")
@@ -104,7 +104,7 @@
 (ps "ftp://ftp.lip6.fr/lip6/reports/1998/lip6.1998.039.ps.gz")
 (abstract "DMeroon provides a data model above a coherently distributed shared memory. DMeroon allows multiple users to statically or dynamically create new classes hierarchically organized, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, marshaling and unmarshaling objects, migrating and sharing objects, local and global garbage collections." "This document describes DMeroon, its philosophy of design, its architecture and principles of implementation, and its bindings with various languages. It also presents some internal details within DMeroon or some applications above DMeroon." "This document tries to present the overlines of DMeroon, in places, it describes features which are not implemented, in some other places there are implemented features that are not documented. I packed it up in order for interested people to get an idea and, perhaps, induce them to pursue my effort or definitively convince me of its little value. I have a lot of lectures to prepare for the following months and will not be able to devote much time to DMeroon.")
 
-(id queinnec1997distributed)
+(id queinnec1997generics)
 (type inproceedings)
 (title "Distributed generic functions")
 (author "Queinnec, Christian")
@@ -142,7 +142,7 @@
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/psls.ps.gz")
 (abstract "DMeroon is a library of C functions that provides a data model above a coherently distributed shared memory. DMeroon allows users to statically or dynamically create new classes, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, migrating and sharing objects, local and global garbage collections. This document provides an overview of DMeroon.")
 
-(id queinnec1992design)
+(id queinnec1992icsla)
 (type inproceedings)
 (title "Design of a concurrent and distributed language")
 (author "Queinnec, Christian")
@@ -155,7 +155,7 @@
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/pwb.ps.gz")
 (abstract "This paper presents a new dialect of Scheme aimed towards concurrency and distribution. It offers a few primitives, including first-class continuations, with very simple semantics. Numerous examples are given showing how to program the classical concurrent control operators such as future, pcall and either. The implementation is sketched and presented along the lines of a metacircular interpreter.")
 
-(id queinnec1992concurrent)
+(id queinnec1992cdscheme)
 (type inproceedings)
 (title "A concurrent and distributed extension of Scheme")
 (author "Queinnec, Christian")
@@ -178,7 +178,7 @@
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.8810&rep=rep1&type=pdf")
 (abstract "This paper exposes an overview of a distributed Lisp system, called TransPive, designed to run on a loosely-coupled multi-processor system." "The main goal of the system is to provide a transparent distributed programming environment, sharing data structures using remote pointers, as a platform to prototype distributed algorithms and applications." "The TransPive message passing primitives create the remote pointers, with local caches for the object's value (to improve performance of read accesses). A protocol to invalidate the caches is invoked when a modifier is applied. A Distributed Garbage Collector is included on TransPive to reclaim distant pointed objects. A simple mechanism to distribute the computation over the system is also provided." "All the mechanisms have been implemented without any operating system support (as virtual memory), and so they are portable to any reliable message-passing distributed environment. In particular, the first version has been implemented on a Transputer network." "The paper is an overview of the remote pointer mechanism, the memory structures and protocols used to share data, the garbage collector and the remote process creation primitives.")
 
-(id jagannathan1997communication)
+(id jagannathan1997coordination)
 (type inproceedings)
 (title "Communication-passing style for coordination languages")
 (author "Jagannathan, Suresh")
@@ -190,7 +190,7 @@
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.39.6224&rep=rep1&type=pdf")
 (abstract "Coordination languages for parallel and distributed systems specify mechanisms for creating tasks and communicating data among them. These languages typically assume that (a) once a task begins execution on some processor, it will remain resident on that processor throughout its lifetime, and (b) communicating shared data among tasks is through some form of message-passing and data migration. In this paper, we investigate an alternative approach to understanding coordination. Communication-passing style (CmPS) refers to a coordination semantics in which data communication is always undertaken by migrating the continuation of the task requiring the data to the processor where the data resides." "Communication-passing style is closely related to continuation-passing style (CPS), a useful transformation for compiling functional languages. Just as CPS eliminates implicit call-return sequences, CmPS eliminates implicit inter-processor data communication and synchronization requests. In a CmPS-transformed program, only continuations (i.e., control contexts) are transmitted across machines; all synchronization and data communication occurs locally. Besides providing significant optimization opportunities, CmPS is a natural representation for implementations on networks of workstations." "This paper presents an operational semantics for a coordination language that supports first-class distributed data repositories. The computation sublanguage considered is an untyped call-by-value functional language similar to pure Scheme. Optimizations and implementation issues that arise from using a CmPS-driven coordination language are also described.")
 
-(id cejtin1995higher)
+(id cejtin1995hodobjects)
 (type article)
 (title "Higher-order distributed objects")
 (author "Cejtin, Henry")
@@ -206,7 +206,7 @@
 (pdf "https://www.researchgate.net/profile/Suresh_Jagannathan/publication/2885348_Higher-Order_Distributed_Objects/links/544008b50cf21227a11ba1ae.pdf")
 (abstract "We describe a distributed implementation of Scheme that permits efficient transmission of higherorder objects such as closures and continuations. The integration of distributed communication facilities within a higher-order programming language engenders a number of new abstractions and paradigms for distributed computing. Among these are user-specified load-balancing and migration policies for threads, incrementally linked distributed computations, and parameterized client-server applications. To our knowledge, this is the first distributed dialect of Scheme (or a related language) that addresses lightweight communication abstractions for higher-order objects.")
 
-(id dwyer1981scheme)
+(id dwyer1981dscheme)
 (type techreport)
 (title "A SCHEME for distributed processes")
 (author "Dwyer, Rex A")
