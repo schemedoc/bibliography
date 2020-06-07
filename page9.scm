@@ -1007,7 +1007,7 @@
 (year 1995)
 (month 11)
 (publisher "Citeseer")
-(ps "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.2017&rep=rep1&type=pdf")
+(pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.2017&rep=rep1&type=pdf")
 (abstract "We present the rst semantics of future in a Schemelike language which has both side-e ects and rstclass continuations. Correctness is established by proving that programs annotated by future have the same observable behaviour as their non-annotated counterparts, even though evaluation may be parallel.")
 
 (id moreau1996semantics)
