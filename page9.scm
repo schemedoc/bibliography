@@ -106,7 +106,6 @@
 (institution "LIP6, Sorbonne University and CNRS")
 (number "039")
 (year 1998)
-(pdf-sha1 "7c9e2316744a156d4bd8a749813965d419aab8ba")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "ftp://ftp.lip6.fr/lip6/reports/1998/lip6.1998.039.ps.gz")
 (abstract "DMeroon provides a data model above a coherently distributed shared memory. DMeroon allows multiple users to statically or dynamically create new classes hierarchically organized, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, marshaling and unmarshaling objects, migrating and sharing objects, local and global garbage collections." "This document describes DMeroon, its philosophy of design, its architecture and principles of implementation, and its bindings with various languages. It also presents some internal details within DMeroon or some applications above DMeroon." "This document tries to present the overlines of DMeroon, in places, it describes features which are not implemented, in some other places there are implemented features that are not documented. I packed it up in order for interested people to get an idea and, perhaps, induce them to pursue my effort or definitively convince me of its little value. I have a lot of lectures to prepare for the following months and will not be able to devote much time to DMeroon.")
