@@ -2,8 +2,6 @@
 
 ### Basic Techniques
 
-  * Guy Lewis Steele, Jr. and Gerald Jay Sussman. "The Dream of a Lifetime: a Lazy Variable Extent Mechanism". _Conference Record of the 1980 Lisp Conference_. 1980. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=802802&coll=portal&dl=ACM).
-  * Guy Lewis Steele, Jr. and Gerald Jay Sussman. "The Dream of a Lifetime: a Lazy Variable Extent Mechanism". 1979. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-527.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-527.pdf).
   * Drew McDermott. "An Efficient Environment Allocation Scheme in an Interpreter for a Lexically-Scoped Lisp". _Conference Record of the 1980 Lisp Conference_. 1980. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=802801&coll=portal&dl=ACM).
   * Steven R. Vegdahl and Uwe F. Pleban. "The Runtime Environment for Screme, a Scheme Implementation on the 88000". _Proceedings of the Third International Conference on Architectural Support for Programming Languages and Operating Systems_. April 1989. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=68199&coll=portal&dl=ACM).
   * Barak A. Pearlmutter and Kevin J. Lang. "The Implementation of Oaklisp". _Topics in Advanced Language Implementation_. 1991.

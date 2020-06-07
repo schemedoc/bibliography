@@ -378,6 +378,18 @@
 (book "Artificial Intelligence: An MIT Perspective")
 (publisher "MIT Press")
 
+(id steele1980dream)
+(type inproceedings)
+(title "The dream of a lifetime: A lazy variable extent mechanism")
+(author "Steele Jr, Guy Lewis")
+(author "Sussman, Gerald Jay")
+(booktitle "Proceedings of the 1980 ACM conference on LISP and functional programming")
+(pages "163--172")
+(year 1980)
+(pdf-sha1 "31de1ed42e183a99d6645e316cfb0cd716364f0b")
+(pdf-sha1 "3cb34b298d5aba1f5fd07a6a4adbc9b024ffa0a3")
+(abstract "We define a \"rack\", a data abstraction hybrid of a register and a stack. It is used for encapsulating the behavior of the kind of register whose contents may have an extent which requires that it be saved during the execution of an unknown piece of code. A rack can be implemented cleverly to achieve performance benefits over the usual implementation of a stack discipline. The basic idea is that we interpose a state machine controller between the rack abstraction and its stack/registers. This controller can act as an on-the-fly run-time peephole optimizer, eliding unnecessary stack operations." "We demonstrate the sorts of savings one might expect by using cleverly implemented racks in the context of a particular caller-saves implementation of an interpreter for the SCHEME dialect of LISP. For sample problems we can expect that only one out of every four pushes that would be done by a conventional machine will be done by the clever version.")
+
 (end-group)
 
 (end-group)
