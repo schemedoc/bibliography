@@ -232,6 +232,7 @@
 (year 1981)
 (institution "Computer Science Department, Indiana University")
 (number 107)
+(pdf-sha1 "7d3327f15e42292d10872acf3acd077ebb274a83")
 (pdf "https://legacy.cs.indiana.edu/ftp/techreports/TR107.pdf")
 
 (end-group)
@@ -562,6 +563,7 @@
 (booktitle "Proceedings of the 1988 ACM Conference on LISP and Functional Programming")
 (pages "28--39")
 (year 1988)
+(pdf-sha1 "eb3c2a0700b647bfa6f2219625b4efcc4203d279")
 (abstract "This paper describes a system called ParaTran for executing sequential Scheme in parallel. It supports arbitrary side effects without requiring user annotations. The ParaTran runtime system detects and corrects data dependency violations using an automatic history and rollback mechanism. ParaTran is first described by analogy with Time Warp, a system for distributed simulation; this description is followed by a discussion of ParaTran's implementation and presentation of preliminary results.")
 
 (id halstead1985multilisp)
@@ -794,6 +796,7 @@
 (booktitle "Proceedings of the 6th ACM SIGPLAN international conference on Principles and practice of declarative programming")
 (pages "203--214")
 (year 2004)
+(pdf-sha1 "315a9c0c28ac00d3595db73e884d5453eea52fd7")
 (html "https://www-sop.inria.fr/members/Manuel.Serrano/publi/sbs-ppdp04.html")
 
 (id gasbichler2002processes)
@@ -843,6 +846,7 @@
 (booktitle "Proceedings of the second ACM SIGPLAN symposium on Principles & practice of parallel programming")
 (pages "128--136")
 (year 1990)
+(pdf-sha1 "07882d60790226b13250dab34e331ec74821c6c9")
 (abstract "Continuations have proven to be useful for implementing a variety of control structures, including exception handling facilities and breadth-first searching algorithms. However, traditional continuations are not useful in the presence of concurrency, because the notion of the rest of the computation represented by a continuation does not in general make sense. This paper presents a new type of continuation, called a process continuation, that may be used to control tree-structured concurrency. Just as a traditional continuation represents the rest of a computation from a given point in the computation, a process continuation represents the rest of a subcomputation, or process, from a given point in the subcomputation. Process continuations allow nonlocal exits to arbitrary points in the process tree and allow the capture of a subtree of a computation as a composable continuation for later use. Even in the absence of multiple processes, the precise control achievable with process continuations makes them more useful than traditional continuations.")
 
 (id wand1980continuation)
@@ -1008,6 +1012,7 @@
 (year 1995)
 (month 11)
 (publisher "Citeseer")
+(pdf-sha1 "9f907e9d075755b119a7786351a1e701f8fa5fca")
 (pdf "http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.41.2017&rep=rep1&type=pdf")
 (abstract "We present the rst semantics of future in a Schemelike language which has both side-e ects and rstclass continuations. Correctness is established by proving that programs annotated by future have the same observable behaviour as their non-annotated counterparts, even though evaluation may be parallel.")
 
@@ -1050,6 +1055,7 @@
 (pages "176--184")
 (year 1990)
 (month 6)
+(pdf-sha1 "a7ce92d18c7a1b393f5f180bbe85e8a27464a2d9")
 
 (id flanagan1995semantics)
 (type inproceedings)
