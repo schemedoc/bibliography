@@ -71,7 +71,7 @@
 
 (id clinger1984scheme)
 (type inproceedings)
-(title "The Scheme 311 compiler an exercise in denotational semantics")
+(title "The Scheme 311 compiler: an exercise in denotational semantics")
 (author "Clinger, William")
 (booktitle "Proceedings of the 1984 ACM Symposium on LISP and functional programming")
 (pages "356--364")
