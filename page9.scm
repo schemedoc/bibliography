@@ -625,7 +625,6 @@
 (pages "5--14")
 (year 1987)
 (publisher "ACM New York, NY, USA")
-(pdf "")
 (abstract "Multilisp is a parallel programming language derived from the Scheme dialect of Lisp by addition of the future construct. Multilisp has been implemented on Concert, a shared-memory muitiprocessor that uses a novel RingBus interconnection. Concert currently has 28 MC68000 processors, with a design goal of 32 processors. Several application programs have been developed and measured using Concert Multilisp. Experience with these programs has contributed to tuning the Multilisp language design and will ultimately contribute to the design of a parallel architecture streamlined for high performance on Multilisp programs.")
 
 ;; MIT Technical Report MIT/LCS/TR-402
@@ -676,7 +675,6 @@
 (pages "380--401")
 (year 1992)
 (organization "Springer")
-(pdf "")
 (abstract "Sting is an operating system designed to serve as a highly efficient substrate for modern programming languages. It is designed to run on both parallel and distributed systems. This paper describes one of the important contributions of Sting - customizable policy management at both the kernel and user level of the operating system. Two well defined interfaces separate control issues from policy issues. These interfaces allow different, customized policy management modules to be implemented without changing the rest of the system. Customizable policy management makes Sting suitable for many different operating environments including real time, interactive, and computationally intensive. It also allows the user to choose or implement a policy management strategy that is best suited to a particular program.")
 
 (id philbin1993sting)
