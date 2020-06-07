@@ -975,8 +975,8 @@
 (year 1993)
 (month 4)
 (school "Brandeis University")
-(pdf "http://www.iro.umontreal.ca/~feeley/papers/FeeleyPhD.pdf")
-(ps "http://www.iro.umontreal.ca/~feeley/papers/futures.ps.gz")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyPhD.pdf")
+(ps "https://www.iro.umontreal.ca/~feeley/papers/futures.ps.gz")
 (abstract "This thesis describes a high-performance implementation technique for Multilisp's \"future\" parallelism construct. This method addresses the non-uniform memory access (NUMA) problem inherent in large scale shared-memory multiprocessors. The technique is based on lazy task creation (LTC), a dynamic task partitioning mechanism that dramatically reduces the cost of task creation and consequently makes it possible to exploit fine grain parallelism. In LTC, idle processors get work to do by \"stealing\" tasks from other processors. A previously proposed implementation of LTC is the shared-memory (SM) protocol. The main disadvantage of the SM protocol is that it requires the stack to be cached suboptimally on cache-incoherent machines. This thesis proposes a new implementation technique for LTC that allows full caching of the stack: the message-passing (MP) protocol. Idle processors ask for work by sending \"work request\" messages to other processors. After receiving such a message a processor checks its private stack and task queue and sends back a task if one is available. The message passing protocol has the added benefits of a lower task creation cost and simpler algorithms. Extensive experiments evaluate the performance of both protocols on large shared-memory multiprocessors: a 90 processor GP1000 and a 32 processor TC2000. The results show that the MP protocol is consistently better than the SM protocol. The difference in performance is as high as a factor of two when a cache is available and a factor of 1.2 when a cache is not available. In addition, the thesis shows that the semantics of the Multilisp language does not have to be impoverished to attain good performance. The laziness of LTC can be exploited to support at virtually no cost several programming features including: the Katz-Weise continuation semantics with legitimacy, dynamic scoping, and fairness.")
 
 ;; Luc Moreau. "The Semantics of Scheme with Future". University of Southampton. Technical Report M95/7. 1995. Available online: [ps](http://www.ecs.soton.ac.uk/~lavm/papers/future.ps.gz).
@@ -1117,7 +1117,7 @@
 (year 1994)
 (month 6)
 (pdf "https://www.researchgate.net/profile/Marc_Feeley/publication/228702374_Construction_parall_ele_de_l'automate_LR_0_Une_application_de_Multilisp_a_la_compilation/links/02e7e5321df5c9e3d1000000/Construction-parall-ele-de-lautomate-LR-0-Une-application-de-Multilisp-a-la-compilation.pdf")
-(ps "http://www.iro.umontreal.ca/~feeley/papers/renpar6.ps.gz")
+(ps "https://www.iro.umontreal.ca/~feeley/papers/renpar6.ps.gz")
 (abstract "Nous nous int'eressons ici \x12;a la parall'elisation des g'en'erateurs d'analyseurs syntaxiques LALR(1), tels YACC et Bison, et \x12;a leur implantation en Multilisp [Halstead, 1985], un dialecte parall\x12;ele de Scheme, dont le choix est motiv'e par la nature symbolique du probl\x12;eme. La construction de tels analyseurs requi\x12;ere habituellement trois phases distinctes [Aho, Sethi et Ullman, 1986] : 1. la construction de l'automate LR(0), 2. le calcul des contextes de r'eductions, aussi appel'es ensembles de pr'evision, et 3. la construction des tables d'analyse.")
 
 (id feeley1994using)
@@ -1133,8 +1133,8 @@
 (year 1994)
 (publisher "Springer")
 (pdf "http://atour.iro.umontreal.ca/rali/sites/default/files/publis/FeeleyNucleic.pdf")
-(pdf "http://www.iro.umontreal.ca/~feeley/papers/FeeleyTurcotteLapalmeLSC94.pdf")
-(ps "http://www.iro.umontreal.ca/~feeley/papers/nucleic.ps.gz")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyTurcotteLapalmeLSC94.pdf")
+(ps "https://www.iro.umontreal.ca/~feeley/papers/nucleic.ps.gz")
 (abstract "This paper describes and evaluates a parallel program for determining the three- dimensional structure of nucleic acids. A parallel constraint satisfaction algorithm is used to search a discrete space of shapes. Using two realistic data sets, we compare a previous sequential version of the program written in Miranda to the new sequential and parallel versions written in C, Scheme, and Multilisp, and explain how these new versions were designed to attain good absolute performance. Critical issues were the performance of floating-point operations, garbage collection, load balancing, and contention for shared data. We found that speedup was dependent on the data set. For the first data set, nearly linear speedup was observed for up to 64 processors whereas for the second the speedup was limited to a factor of 16.")
 
 (id feeley1992message)
@@ -1146,8 +1146,8 @@
 (year 1992)
 (organization "Springer")
 (pdf-sha1 "879de8a4ae9ad59ca9ed8fe8a19e21caabf900bd")
-(pdf "http://www.iro.umontreal.ca/~feeley/papers/FeeleyPSCLSA93.pdf")
-(ps "http://www.iro.umontreal.ca/~feeley/papers/pscw92.ps.gz")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyPSCLSA93.pdf")
+(ps "https://www.iro.umontreal.ca/~feeley/papers/pscw92.ps.gz")
 (abstract "This paper describes an implementation technique for Multilisp's future construct aimed at large shared-memory multiprocessors. The technique is a variant of lazy task creation. The original implementation of lazy task creation described in [Mohr, 1991] relies on ef- cient shared memory to distribute tasks between processors. In contrast, we propose a task distribution method based on a message passing paradigm. Its main advantages are that it is simpler to implement, has a lower cost for locally run tasks, and allows full caching of the stack on cache incoherent machines. Benchmarks on a 32 processor BBN TC2000 show that our method is more efficient than the original implementation by as much as a factor of 2.")
 
 (id feeley1990parallel)
@@ -1158,8 +1158,8 @@
 (booktitle "Proceedings of the 1990 ACM conference on LISP and functional programming")
 (pages "119--130")
 (year 1990)
-(pdf "http://www.iro.umontreal.ca/~feeley/papers/FeeleyMillerLFP90.pdf")
-(ps "http://www.iro.umontreal.ca/~feeley/papers/pvm.ps.gz")
+(pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyMillerLFP90.pdf")
+(ps "https://www.iro.umontreal.ca/~feeley/papers/pvm.ps.gz")
 (abstract "Programs compiled by Gambit, our Scheme compiler, achieve performance as much as twice that of the fastest available Scheme compilers. Gambit is easily ported, while retaining its high performance, through the use of a simple virtual machine (PVM). PVM allows a wide variety of machine-independent optimizations and it supports parallel computation based on the future construct. PVM conveys high-level information bidirectionally between the machine-independent front end of the compiler and the machine-dependent back end, making it easy to implement a number of common back end optimizations that are difficult to achieve for other virtual machines." "PVM is similar to many real computer architectures and has an option to efficiently gather dynamic measurements of virtual machine usage. These measurements can be used in performance prediction for ports to other architectures as well as design decisions related to proposed optimizations and object representations.")
 
 (id jagannathan1994high)
