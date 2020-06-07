@@ -106,6 +106,8 @@
 (institution "LIP6, Sorbonne University and CNRS")
 (number "039")
 (year 1998)
+(pdf-sha1 "c3973145836bd2cd841219f53dc2788d71ce2c7a")
+(ps-sha1 "9ce1e5c23c3a0add2109ebae1d70e9ac49aaaf84")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Reports/dmeroon.ps.gz")
 (ps "ftp://ftp.lip6.fr/lip6/reports/1998/lip6.1998.039.ps.gz")
 (abstract "DMeroon provides a data model above a coherently distributed shared memory. DMeroon allows multiple users to statically or dynamically create new classes hierarchically organized, to dynamically instantiate these classes and to dynamically and coherently share the resulting instances over a network. DMeroon automatically takes care of representation and alignment, marshaling and unmarshaling objects, migrating and sharing objects, local and global garbage collections." "This document describes DMeroon, its philosophy of design, its architecture and principles of implementation, and its bindings with various languages. It also presents some internal details within DMeroon or some applications above DMeroon." "This document tries to present the overlines of DMeroon, in places, it describes features which are not implemented, in some other places there are implemented features that are not documented. I packed it up in order for interested people to get an idea and, perhaps, induce them to pursue my effort or definitively convince me of its little value. I have a lot of lectures to prepare for the following months and will not be able to devote much time to DMeroon.")
@@ -326,6 +328,8 @@
 (journal "on Scheme and Functional Programming")
 (pages "87")
 (year 2004)
+;; SHA of full TR 600 PDF:
+(pdf-sha1 "f16cb1dad30acb26ea461c51f37384e0b540a559")
 (pdf "ftp://html.soic.indiana.edu/pub/techreports/TR600.pdf#page=91")
 (abstract "We present the embedding of ULM in Scheme and an implementation of a compiler and virtual machine for it. ULM is a core programming model that allows multi-threaded and distributed programming via strong mobility with a deterministic semantics. We present the multi-threading and distributed primitives of ULM step by step using examples. The introduction of mobility in a Scheme language raises questions about the semantics of variables with respect to migration. We expose the problems and offer two solutions alongside ULM’s network references. We also present our implementation of the compiler, virtual machine and the concurrent threading library written in Scheme.")
 
@@ -515,6 +519,7 @@
 (title "Sérialisation-désérialisation en DMeroon")
 (year 1997)
 (month 11)
+(pdf-sha1 "c7685ac9b1208d23e1651ced201cad8b9e281081")
 (pdf "https://christian.queinnec.org/PDF/serdes.pdf")
 (ps "https://pages.lip6.fr/Christian.Queinnec/Papers/serdes.ps.gz")
 
@@ -543,6 +548,8 @@
 (journal "on Scheme and Functional Programming")
 (pages "75")
 (year 2004)
+;; SHA of full TR 600 PDF:
+(pdf-sha1 "f16cb1dad30acb26ea461c51f37384e0b540a559")
 (pdf "ftp://html.soic.indiana.edu/pub/techreports/TR600.pdf#page=79")
 (abstract "There are two main policies for scheduling thread-based concurrent programs: preemptive scheduling and cooperative scheduling. The former is known to be difficult to debug, because it is usually non-deterministic and can lead to data races or difficult thread synchronization. We believe the latter is a better model when it comes to debugging programs." "In this paper, we discuss the debugging of Scheme Fair Threads, that are based on cooperative scheduling and synchronous reactive programming. In this approach, thread communication and synchronization is achieved by means of special primitives called signals, which ease the debugging process. We present the tools we have implemented to deal with the main types of concurrent bugs that can arise in this special programming framework.")
 
@@ -579,6 +586,7 @@
 (booktitle "Proceedings of the ACM SIGPLAN 1989 Conference on Programming language design and implementation")
 (pages "81--90")
 (year 1989)
+(pdf-sha1 "f1f80191d7d88d3e2bb389a6b429ac14dafee547")
 (pdf "https://people.csail.mit.edu/riastradh/t/halstead89mul-t.pdf")
 (abstract "Mul-T is a parallel Lisp system, based on Multilisp's future construct, that has been developed to run on an Encore Multimax multiprocessor. Mul-T is an extended version of the Yale T system and uses the T system's ORBIT compiler to achieve \"production quality\" performance on stock hardware - about 100 times faster than Multilisp. Mul-T shows that futures can be implemented cheaply enough to be useful in a production-quality system. Mul-T is fully operational, including a user interface that supports managing groups of parallel tasks.")
 
@@ -624,6 +632,7 @@
 (pages "5--14")
 (year 1987)
 (publisher "ACM New York, NY, USA")
+(pdf-sha1 "f724c474b070167da2a8bf299f3428c04968c2f1")
 (abstract "Multilisp is a parallel programming language derived from the Scheme dialect of Lisp by addition of the future construct. Multilisp has been implemented on Concert, a shared-memory muitiprocessor that uses a novel RingBus interconnection. Concert currently has 28 MC68000 processors, with a design goal of 32 processors. Several application programs have been developed and measured using Concert Multilisp. Experience with these programs has contributed to tuning the Multilisp language design and will ultimately contribute to the design of a parallel architecture streamlined for high performance on Multilisp programs.")
 
 ;; MIT Technical Report MIT/LCS/TR-402
@@ -653,6 +662,7 @@
 (author "Queinnec, Christian")
 (booktitle "High Performance and Parallel Computing in Lisp Workshop, Twickenham, England")
 (year 1990)
+(pdf-sha1 "0098452bcc26919460a8a33baf36e7844e784989")
 (pdf "https://pdfs.semanticscholar.org/0098/452bcc26919460a8a33baf36e7844e784989.pdf")
 (abstract "The Scheme language does not fully specify the semantics of combination: the evaluation order of the terms composing a combination is left indeterminate. We investigate in this paper a different semantics for Scheme where terms of combinations are evaluated concurrently. The resulting semantics models a language with concurrent threads sharing a common workspace. The semantics is given in terms of denotational semantics and uses resumptions as well as a choice operator: oneof which mimics a scheduler. An alternate definition for this operator lets appear the classical powerdomains. The main interest of this operator is to offer a formalization that can be read with an operational point of view while keeping a firm theoretical base." "Scheme also offers first class continuations with indefinite extent; we examine some semantics for continuations with respect to concurrency. Each of these semantics is a natural extension of the sequential case of regular Scheme. Still they strongly differ in their observed behaviours." "The resulting language, named PolyScheme, offers much of the features of current concurrent Lisp (or Scheme) dialects thanks to the sole extension of its combination semantics and without any explicit specialized construct dealing with concurrency.")
 
@@ -719,6 +729,7 @@
 (author "Ribbens, Daniel")
 (year 1995)
 (publisher "Springer-Verlag")
+(pdf-sha1 "a4e1e0605a9184d1cc1b448247116b1298d5a17f")
 (pdf "https://eprints.soton.ac.uk/252768/1/The_Semantics_of_pcall_and_fork_in_the_presence_of_firs-class_continuations_and_side-effects.pdf")
 (abstract "We present the semantics of the annotations pcall and fork for parallel evaluation of Scheme. Annotated programs are proved to be behaviourly indistinguishable from their non-annotated counterparts even in the presence of first-class continuations and side-effects. The semantics takes the form of an abstract machine, which can be regarded as a guideline for an implementation.")
 
@@ -732,6 +743,7 @@
 (pages "59--82")
 (year 1995)
 (organization "Springer")
+(pdf-sha1 "93e940d35cbb7c2c7cd2f57c39f2674021a30e84")
 (pdf "https://www.researchgate.net/profile/Akinori_Yonezawa2/publication/2486690_Schematic_A_Concurrent_Object-Oriented_Extension_to_Scheme/links/53eb07490cf28f342f44f150.pdf")
 (abstract "A concurrent object-oriented extension to the programming language Scheme, called Schematic, is described. Schematic supports familiar constructs often used in typical parallel programs (future and higher-level macros such as plet and pbegin), which are actually defined atop a very small number of fundamental primitives. In this way, Schematic achieves both the convenience for typical concurrent programming and simplicity and exibility of the language kernel. Schematic also supports concurrent objects which exhibit more natural and intuitive behavior than the \"bare\" (unprotected) shared memory, and permit more concurrency than the traditional Actor model. Schematic will be useful for intensive parallel applications on parallel machines or networks of workstations, concurrent GUI programming, distributed programming over network, and even concurrent shell programming.")
 
@@ -741,6 +753,7 @@
 (author "Masuhara, Hidehiko")
 (year 1999)
 (school "PhD thesis, Department of Information Science, Faculty of Science~...")
+(pdf-sha1 "3eafada8bf250911675dbbbd41b7aebff96aee82")
 (pdf "https://pdfs.semanticscholar.org/3eaf/ada8bf250911675dbbbd41b7aebff96aee82.pdf")
 (abstract "Parallel and distributed programs often have hardware/problem specific optimizations for improving quality of the program such as efficiency and robustness. Those optimizations, unfortunately, degrade portability and re-usability as they are intertwined with the original algorithm description. Reective languages, which provide the application programmer extensible and abstract implementation of the language, can describe such optimizations as extensions to the language. The separation of optimization descriptions gains portability and re-usability of both application programs and optimizations. However, the interpretive execution model of reective languages imposes a large amount of performance overhead, which sometimes outweighs bene- fits of optimizations. Previous reective languages prohibit some of operations being modified via reection, so as to reduce the amount of interpretation overhead. The imperfection of this approach is that it still leaves a considerable amount of overhead, and it yields less exible, unclear reective architecture." "This dissertation investigates design and compilation framework of metainterpreters and meta-objects in an object-oriented concurrent language ABCL/R3. By using partial evaluation to compile reective programs, ABCL/R3 achieves exible and lucid reective architecture and efficient execution at the same time. We design full-edged meta-interpreters by examining several concurrent programming examples. A newly proposed delegation mechanism enables to define modular and scope controlled extensions to meta-interpreters. We design meta-objects by exploiting the notion of reader/writer methods in a concurrent object-oriented language Schematic, so that they can be effectively partially evaluated. The compilation frameworks of meta-interpreters and meta-objects basically translate concurrent object definitions into a sequential program, then apply partial evaluator for a sequential language, and generates a program in a (non-reective) concurrent object-oriented language, in which base-level and meta-level objects are collapsed to single level objects. The efficiency of generated programs is demonstrated by several benchmark programs, in which our compiler exhibits performance close to non-reective languages.")
 
@@ -790,6 +803,8 @@
 (journal "on Scheme and Functional Programming")
 (pages "49")
 (year 2002)
+;; SHA of full proceedings PDF:
+(pdf-sha1 "4f6de2829de5c80d27f4ceec799ce945c069f279")
 (pdf "http://www.ccs.neu.edu/home/shivers/papers/scheme02/tr.pdf#page=53")
 (abstract "The new version of scsh enables concurrent system programming with portable user-level threads. In scsh, threads behave like processes in many ways. Each thread receives its own set of process resources. Like Unix processes, forked threads can inherit resources from the parent thread. To store these resources scsh uses preserved thread fluids, a special kind of fluid variables. The paper gives a detailed description of an efficient implementation for thread-local process resources. Scsh also provides an interface to the fork system calls which avoids common pitfalls which arise with a userlevel thread system. Scsh contains a binding for fork that forks \"only the current thread.\"")
 
@@ -857,6 +872,7 @@
 (year 1994)
 (month 1)
 (publisher "Springer")
+(pdf-sha1 "8f0da1a917951fd389e7e4527aef1068f1fb0973")
 (pdf "https://pdfs.semanticscholar.org/8f0d/a1a917951fd389e7e4527aef1068f1fb0973.pdf")
 (ps "http://www.cs.indiana.edu/~dyb/papers/subcontinuations.ps.gz")
 (abstract "Continuations have proven to be useful for implementing a variety of control structures, including exception handling facilities and breadth-first searching algorithms. However, traditional continuations are not useful in the presence of concurrency, because the notion of the rest of the computation represented by a continuation does not in general make sense. Traditional continuations can also be difficult to use in nonconcurrent settings, since their global nature is sometimes problematic. This article presents a new type of continuation, called a subcontinuation. Just as a traditional continuation represents the rest of a computation from a given point in the computation, a subcontinuation represents the rest of a subcomputation from a given point in the subcomputation. Subcontinuations may be used to control tree-structured concurrency by allowing nonlocal exits to arbitrary points in a process tree and allowing the capture of a subtree of a computation as a composable continuation for later use. In the absence of concurrency the localized control achievable with subcontinuations makes them more useful than traditional continuations.")
@@ -869,6 +885,7 @@
 (pages "2--1")
 (year 1997)
 (month 1)
+(pdf-sha1 "410d403ae4757e062f992e4b32cda6245a1a4705")
 (pdf "https://www.eecis.udel.edu/~cavazos/cisc879-spring2008/papers/cps-threads.pdf")
 (abstract "It is well known [Wand] that concurrency can be expressed within languages that provide a continuation type. However, a number of misconceptions persist regarding the relationship between threads and continuations. I discuss the proper relationship between these two objects, and present a model for directly expressing concurrency using continuations. The model is designed to support systems programming, and has several novel features: it is synchronous, preemptable, and fully virtualisable, allowing schedulers to be written by unprivileged users that are indistinguishable from top-level schedulers that actually control access to the hardware resources.")
 
@@ -920,6 +937,7 @@
 (year 1994)
 (month 4)
 (organization "Springer")
+(pdf-sha1 "85524115a001b37c731d47e3c260160931f93101")
 (pdf "https://link.springer.com/content/pdf/10.1007/3-540-57880-3_28.pdf")
 (abstract "The PCKS-machine is an abstract machine that evaluates parallel functional programs with first-class continuations. Parallelism is introduced by the construct pcall, which provides a fork-and-join type of parallelism. To the best of our knowledge, the PCKS-machine is the first implementation of such a language that is proved to have a transparent construct for parallelism: every program using such a construct returns the same result as in the absence of this construct. This machine is also characterised by the non-speculative invocation of continuations whose interest is illustrated in an application.")
 
@@ -956,6 +974,8 @@
 (year 1995)
 (month 5)
 (organization "Springer")
+(pdf-sha1 "0c7f6805f4ea40a0794a1e3f20ccb1a7d2548f4c")
+(pdf-sha1 "5009e982abb72e6742614a21cd6a0456c01bf18f")
 (pdf "https://link.springer.com/content/pdf/10.1007/3-540-59293-8_231.pdf")
 (pdf "https://eprints.soton.ac.uk/252767/1/Non-speculative_and_Upward_Invocation_of_Continuations_in_Parallel_Language.pdf")
 (abstract "A method of preserving the sequential semantics in parallel programs with first-class continuations is to invoke continuations non-speculatively. This method, which prevents a continuation from being invoked as long as its invocation can infringe the sequential semantics, reduces parallelism by the severe conditions that it imposes~ especially on upward uses. In this paper, we present new conditions for invoking continuations in an upward way and both preserving the sequential semantics and providing parallelism. This new approach is formalised in the PCKS-machine, which is proved to be correct by showing that it has the same observational equivalence theory as the sequential semantics.")
@@ -971,6 +991,7 @@
 (year 1993)
 (month 4)
 (school "Brandeis University")
+(pdf-sha1 "de02d52f3edcddfc257ec29d528de5c1fc7059ae")
 (pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyPhD.pdf")
 (ps "https://www.iro.umontreal.ca/~feeley/papers/futures.ps.gz")
 (abstract "This thesis describes a high-performance implementation technique for Multilisp's \"future\" parallelism construct. This method addresses the non-uniform memory access (NUMA) problem inherent in large scale shared-memory multiprocessors. The technique is based on lazy task creation (LTC), a dynamic task partitioning mechanism that dramatically reduces the cost of task creation and consequently makes it possible to exploit fine grain parallelism. In LTC, idle processors get work to do by \"stealing\" tasks from other processors. A previously proposed implementation of LTC is the shared-memory (SM) protocol. The main disadvantage of the SM protocol is that it requires the stack to be cached suboptimally on cache-incoherent machines. This thesis proposes a new implementation technique for LTC that allows full caching of the stack: the message-passing (MP) protocol. Idle processors ask for work by sending \"work request\" messages to other processors. After receiving such a message a processor checks its private stack and task queue and sends back a task if one is available. The message passing protocol has the added benefits of a lower task creation cost and simpler algorithms. Extensive experiments evaluate the performance of both protocols on large shared-memory multiprocessors: a 90 processor GP1000 and a 32 processor TC2000. The results show that the MP protocol is consistently better than the SM protocol. The difference in performance is as high as a factor of two when a cache is available and a factor of 1.2 when a cache is not available. In addition, the thesis shows that the semantics of the Multilisp language does not have to be impoverished to attain good performance. The laziness of LTC can be exploited to support at virtually no cost several programming features including: the Katz-Weise continuation semantics with legitimacy, dynamic scoping, and fairness.")
@@ -1112,6 +1133,7 @@
 (volume 6)
 (year 1994)
 (month 6)
+(pdf-sha1 "852bc598ce4d32ee7b2357f4ce5f2a4c23000978")
 (pdf "https://www.researchgate.net/profile/Marc_Feeley/publication/228702374_Construction_parall_ele_de_l'automate_LR_0_Une_application_de_Multilisp_a_la_compilation/links/02e7e5321df5c9e3d1000000/Construction-parall-ele-de-lautomate-LR-0-Une-application-de-Multilisp-a-la-compilation.pdf")
 (ps "https://www.iro.umontreal.ca/~feeley/papers/renpar6.ps.gz")
 (abstract "Nous nous int'eressons ici \x12;a la parall'elisation des g'en'erateurs d'analyseurs syntaxiques LALR(1), tels YACC et Bison, et \x12;a leur implantation en Multilisp [Halstead, 1985], un dialecte parall\x12;ele de Scheme, dont le choix est motiv'e par la nature symbolique du probl\x12;eme. La construction de tels analyseurs requi\x12;ere habituellement trois phases distinctes [Aho, Sethi et Ullman, 1986] : 1. la construction de l'automate LR(0), 2. le calcul des contextes de r'eductions, aussi appel'es ensembles de pr'evision, et 3. la construction des tables d'analyse.")
@@ -1128,6 +1150,8 @@
 (pages "231--247")
 (year 1994)
 (publisher "Springer")
+(pdf-sha1 "55ef86ae7440550e8a919d83afb5319e31cf8a18")
+(pdf-sha1 "9d1181bf417ba250b9b0260b3d613146963141a3")
 (pdf "http://atour.iro.umontreal.ca/rali/sites/default/files/publis/FeeleyNucleic.pdf")
 (pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyTurcotteLapalmeLSC94.pdf")
 (ps "https://www.iro.umontreal.ca/~feeley/papers/nucleic.ps.gz")
@@ -1154,6 +1178,7 @@
 (booktitle "Proceedings of the 1990 ACM conference on LISP and functional programming")
 (pages "119--130")
 (year 1990)
+(pdf-sha1 "275a6f7370614535bbf69b649cb8cb15d7c57b4a")
 (pdf "https://www.iro.umontreal.ca/~feeley/papers/FeeleyMillerLFP90.pdf")
 (ps "https://www.iro.umontreal.ca/~feeley/papers/pvm.ps.gz")
 (abstract "Programs compiled by Gambit, our Scheme compiler, achieve performance as much as twice that of the fastest available Scheme compilers. Gambit is easily ported, while retaining its high performance, through the use of a simple virtual machine (PVM). PVM allows a wide variety of machine-independent optimizations and it supports parallel computation based on the future construct. PVM conveys high-level information bidirectionally between the machine-independent front end of the compiler and the machine-dependent back end, making it easy to implement a number of common back end optimizations that are difficult to achieve for other virtual machines." "PVM is similar to many real computer architectures and has an option to efficiently gather dynamic measurements of virtual machine usage. These measurements can be used in performance prediction for ports to other architectures as well as design decisions related to proposed optimizations and object representations.")
@@ -1187,6 +1212,7 @@
 (pages "173--193")
 (year 1994)
 (publisher "Springer")
+(pdf-sha1 "a13a04227debe6cec81d3b85a8842c7a5c945c5e")
 (pdf "https://www.researchgate.net/profile/James_Philbin/publication/220607016_A_Concurrent_Abstract_Interpreter/links/0deec52d302c638eb2000000.pdf")
 (ps "http://www.cs.purdue.edu/homes/suresh/papers/lasc94-2.ps.gz")
 (abstract "Abstract interpretation has been long regarded as a promising optimization and analysis technique for high-level languages. In this article, we describe an implementation of a concurrent abstract interpreter. The interpreter evaluates programs written in an expressive parallel language that supports dynamic process creation, first-class locations, list data structures and higher-order procedures. Synchronization in the input language is mediated via first-class shared locations. The analysis computes intra- and inter-thread control and dataflow information." "The interpreter is implemented on top of Sting, a multi-threaded dialect of Scheme that serves as a high-level operating system for modern programming languages")
