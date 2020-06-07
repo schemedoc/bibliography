@@ -328,7 +328,7 @@
 (journal "on Scheme and Functional Programming")
 (pages "87")
 (year 2004)
-(pdf "ftp://svn.soic.indiana.edu/pub/techreports/TR600.pdf#page=91")
+(pdf "ftp://html.soic.indiana.edu/pub/techreports/TR600.pdf#page=91")
 (abstract "We present the embedding of ULM in Scheme and an implementation of a compiler and virtual machine for it. ULM is a core programming model that allows multi-threaded and distributed programming via strong mobility with a deterministic semantics. We present the multi-threading and distributed primitives of ULM step by step using examples. The introduction of mobility in a Scheme language raises questions about the semantics of variables with respect to migration. We expose the problems and offer two solutions alongside ULM’s network references. We also present our implementation of the compiler, virtual machine and the concurrent threading library written in Scheme.")
 
 (id wittenberger2002askemos)
@@ -1104,7 +1104,7 @@
 (month 8)
 (publisher "Computer Science Department, Indiana University")
 (pdf-sha1 "15028b48f154817babf7f42736c3e89cae8966b9")
-(pdf "ftp://svn.soic.indiana.edu/pub/techreports/TR147.pdf")
+(pdf "ftp://html.soic.indiana.edu/pub/techreports/TR147.pdf")
 (abstract "We consider language modeling using Scheme, an applicative order, lexically scoped dialect of Lisp. In Lisp, programs are represented by list structures. By representing programs of other languages as list structures with carefully placed keywords it is possible to define the keywords as either functions or syntactic extensions. Proper consideration of the lexical scoping yields even more control than would be expected. As an example of this approach we prototype Data Flow, a concurrent computation system, by expanding each actor or arc into a function invocation and by expanding a network into a Scheme function that is compiled and executed. This approach avoids the familiar interpretation step used in most prototyping approaches, yielding improved performance.")
 
 (id boucher1994construction)
