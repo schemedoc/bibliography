@@ -2,8 +2,6 @@
 
 ### Basic Techniques
 
-  * Drew McDermott. "An Efficient Environment Allocation Scheme in an Interpreter for a Lexically-Scoped Lisp". _Conference Record of the 1980 Lisp Conference_. 1980. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=802801&coll=portal&dl=ACM).
-  * Steven R. Vegdahl and Uwe F. Pleban. "The Runtime Environment for Screme, a Scheme Implementation on the 88000". _Proceedings of the Third International Conference on Architectural Support for Programming Languages and Operating Systems_. April 1989. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=68199&coll=portal&dl=ACM).
   * Barak A. Pearlmutter and Kevin J. Lang. "The Implementation of Oaklisp". _Topics in Advanced Language Implementation_. 1991.
   * Uwe F. Pleban. "Compilation Issues in the Screme Implementation for the 88000". _Topics in Advanced Language Implementation_. 1991.
   * Dan Teodosiu. "HARE: An Optimizing Portable Compiler for Scheme". _ACM Sigplan Notices_. 26. 1. Jan 1991. Available online: [ps](http://www-flash.stanford.edu/~dant/papers/hare.ps.Z) [pdf](http://citeseer.nj.nec.com/rd/2643588%2C30693%2C1%2C0.25%2CDownload/http%3A%252F%252Fciteseer.nj.nec.com%252Fcache%252Fpapers%252Fcs%252F5642%252Fhttp%253AzSzzSzwww-flash.stanford.eduzSz%257EdantzSzpaperszSzhare.pdf/hare-an-optimizing-portable.pdf).
