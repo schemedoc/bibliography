@@ -2,15 +2,6 @@
 
 ### Basic Techniques
 
-  * Christian Queinnec. "Continuation conscious compilation". _Lisp Pointers_. 6(1). January 1993. Available online: [ps](http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/ccc.ps.gz) [pdf](http://pagesperso-systeme.lip6.fr/Christian.Queinnec/PDF/ccc.pdf).
-  * Christian Queinnec. "Continuation sensitive compilation". Laboratoire d'Informatique de l'École Polytechnique. Research Report LIX RR 92/14. November 1992. Available online: [ps](http://pagesperso-systeme.lip6.fr/Christian.Queinnec/Papers/csc.ps.gz) [pdf](http://pagesperso-systeme.lip6.fr/Christian.Queinnec/PDF/csc.pdf).
-  * Peter Thiemann. "Higher-Order Code Splicing". _European Symposium on Programming, ESOP '99_. volume 1576 of Lecture Notes in Computer Science. March 1999. Available online: [ps](http://www.informatik.uni-freiburg.de/~thiemann/papers/esop99.ps.gz).
-  * Guy Lewis Steele, Jr.. "Debunking the "Expensive Procedure Call" Myth, or Procedure Call Implementations Considered Harmful, or LAMBDA, the Ultimate GOTO". _ACM Conference Proceedings_. 1977. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=810196&coll=portal&dl=ACM).
-  * Guillermo J. Rozas. "Liar, an Algol-like Compiler for Scheme". Massachusetts Institute of Technology. S. B. Thesis. January 1984.
-  * Richard Schooler and James W. Stamos. "Proposal For a Small Scheme Implementation". Massachusetts Institute of Technology. MIT LCS Memo TM-267. October 1984.
-  * Mitchell Wand. "From Interpreter to Compiler: A Representational Derivation". _Programs as Data Objects_. Lecture Notes in Computer Science. 1986.
-  * Mitchell Wand and Daniel P. Friedman. "Compiling Lambda Expressions Using Continuations and Factorizations". _Journal of Computer Languages_. 3. 1978.
-  * Guy Lewis Steele, Jr.. "Compiler Optimization Based on Viewing LAMBDA as RENAME + GOTO". _AI: An MIT Perspective_. 1980.
   * Guy Lewis Steele, Jr. and Gerald Jay Sussman. "The Dream of a Lifetime: a Lazy Variable Extent Mechanism". _Conference Record of the 1980 Lisp Conference_. 1980. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=802802&coll=portal&dl=ACM).
   * Guy Lewis Steele, Jr. and Gerald Jay Sussman. "The Dream of a Lifetime: a Lazy Variable Extent Mechanism". 1979. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-527.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/ai-lab-pubs/AIM-527.pdf).
   * Drew McDermott. "An Efficient Environment Allocation Scheme in an Interpreter for a Lexically-Scoped Lisp". _Conference Record of the 1980 Lisp Conference_. 1980. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=802801&coll=portal&dl=ACM).
