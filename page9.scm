@@ -232,6 +232,7 @@
 (year 1981)
 (institution "Computer Science Department, Indiana University")
 (number 107)
+(pdf "https://legacy.cs.indiana.edu/ftp/techreports/TR107.pdf")
 
 (end-group)
 
