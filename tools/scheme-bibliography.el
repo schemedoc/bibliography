@@ -44,13 +44,23 @@
                        (push basename non-compressed-basenames)))))))
         (when non-compressed-basenames
           (let ((default-directory scheme-bibliography-pdf-directory))
-            (message "%s"
-                     (shell-command
-                      (string-join (cons "shasum"
-                                         (mapcar
-                                          #'shell-quote-argument
-                                          non-compressed-basenames))
-                                   " "))))))))
+            (let ((output
+                   (shell-command-to-string
+                    (string-join (cons "shasum"
+                                       (mapcar
+                                        #'shell-quote-argument
+                                        non-compressed-basenames))
+                                 " "))))
+              (with-temp-buffer
+                (insert output)
+                (goto-char (point-min))
+                (while (not (eobp))
+                  (when (looking-at
+                         "^\\([0-9a-f]\\{40\\}\\)  .*\\.\\(.*?\\)$")
+                    (let ((sum (match-string 1))
+                          (ext (match-string 2)))
+                      (message (format "(%s-sha1 %S)" ext sum))
+                      (goto-char (1+ (point-at-eol)))))))))))))
   ;; Highlight the title of the paper for copy-pasting into a search engine.
   (goto-char (point-at-bol))
   (re-search-forward "\. \"\\(.*?\\)\".")
