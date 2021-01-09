@@ -1,14 +1,5 @@
 ## Compiler Technology/Implementation Techniques and Optimization
 
-### Implementing Scheme in Java, .NET, and JavaScript
-
-  * Per Bothner. "Kawa: Compiling Scheme to Java". _Lisp Users Conference: Lisp in the Mainstream (40th Anniversary of Lisp)_. November 1998. Available online: [ps](http://sources.redhat.com/kawa/papers/KawaLisp98.ps.gz).
-  * Mark DePristo. "SINTL: A Strongly-Typed Generic Intermediate Language for Scheme". Northwestern University. May 2000. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/depristo00sintl.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/depristo00sintl.pdf).
-  * Brian D. Carlstrom. "Embedding Scheme in Java". PhD. Thesis. Massachusetts Institute of Technlogy. February 2001. Available online: [pdf](http://www.swiss.ai.mit.edu/~bdc/thesis/thesis.pdf).
-  * Yannis Bres and Bernard Serpette and Manuel Serrano. "Compiling Scheme programs to .NET Common Intermediate Language". _2nd International Workshop on .NET Technologies_. May 2004. Available online: [pdf](http://www.inria.fr/mimosa/Manuel.Serrano/publi/bss-dotnet04.pdf).
-  * Yannis Bres and Bernard Serpette and Manuel Serrano. "Bigloo.NET: compiling Scheme to .NET CLR". _Journal of Object Technology_. 3(9). October 2004. Available online: [html](http://www.inria.fr/mimosa/Manuel.Serrano/publi/jot04/jot04.html).
-  * Florian Loitsch. "Javascript to Scheme Compilation". _2005 Workshop on Scheme and Functional Programming_. September 2005. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2005/loitsch.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2005/loitsch.pdf).
-
 ### Compiling Scheme to C
 
   * Joel F. Bartlett. "SCHEME->C: A Portable Scheme-to-C Compiler". 1989. Available online: [ps](ftp://ftp.cs.indiana.edu/pub/scheme-repository/doc/pubs/s2c.ps.gz).
