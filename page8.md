@@ -1,22 +1,5 @@
 ## Compiler Technology/Implementation Techniques and Optimization
 
-### Basic Techniques
-
-  * Barak A. Pearlmutter and Kevin J. Lang. "The Implementation of Oaklisp". _Topics in Advanced Language Implementation_. 1991.
-  * Uwe F. Pleban. "Compilation Issues in the Screme Implementation for the 88000". _Topics in Advanced Language Implementation_. 1991.
-  * Dan Teodosiu. "HARE: An Optimizing Portable Compiler for Scheme". _ACM Sigplan Notices_. 26. 1. Jan 1991. Available online: [ps](http://www-flash.stanford.edu/~dant/papers/hare.ps.Z) [pdf](http://citeseer.nj.nec.com/rd/2643588%2C30693%2C1%2C0.25%2CDownload/http%3A%252F%252Fciteseer.nj.nec.com%252Fcache%252Fpapers%252Fcs%252F5642%252Fhttp%253AzSzzSzwww-flash.stanford.eduzSz%257EdantzSzpaperszSzhare.pdf/hare-an-optimizing-portable.pdf).
-  * Nitsan Seniak. "Compilation de Scheme par specialisation explicite". _BIGRE Bulletin_. 65. July 1989.
-  * Chris Hanson. "Efficient Stack Allocation for Tail-Recursive Languages". _Proceedings of the 1990 ACM Conference on Lisp and Functional Programming_. June 1990. Available online: [ACM Digital Library](http://portal.acm.org/citation.cfm?id=91603&coll=Portal).
-  * Dan Teodosiu. "HARE: A Compiler for Scheme". Masters Thesis. Master's Thesis. June 1990.
-  * Michael Sperber and Martin Gasbichler. "Final shift for call/cc: Direct implementation of shift and reset". _International Conference on Functional Programming (ICFP'2002)_. October 2002. Available online: [ps](http://www-pu.informatik.uni-tuebingen.de/users/gasbichl/publications/icfp02.ps).
-  * Martin Gasbichler, Michael Sperber. "A Direct Implementation of Shift/Reset". _IFL 2001_. 2001.
-  * Abdulaziz Ghuloum and R. Kent Dybvig. "Fixing Letrec (reloaded)". _2009 Workshop on Scheme and Functional Programming_. August 2009. Available online: [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2009/06-ghuloum.pdf).
-  * Abdulaziz Ghuloum. "An Incremental Approach to Compiler Construction". _2006 Workshop on Scheme and Functional Programming_. September 2006. Available online: [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2006/11-ghuloum.pdf).
-  * Dipanwita Sarkar, Oscar Waddell and R. Kent Dybvig. "A Nanopass Infrastructure for Compiler Education". _International Conference on Functional Programming 2004 (ICFP2004)_. September 2004.
-  * Greg Pettyjohn, John Clements, Joe Marshall, Shriram Krishnamurthi and Matthias Felleisen. "Continuations from Generalized Stack Inspection". _International Conference on Functional Programming, ICFP 2005_. September 2005. Available online: [downloadable paper](http://www.cs.brown.edu/~sk/Publications/Papers/Published/pcmkf-cont-from-gen-stack-insp/).
-  * Matthew Flatt and Eli Barzilay. "Keyword and Optional Arguments in PLT Scheme". _2009 Workshop on Scheme and Functional Programming_. August 2009. Available online: [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2009/10-flatt.pdf).
-  * Abdulaziz Ghuloum and R. Kent Dybvig. "Generation-Friendly Eq Hash Tables". _2007 Workshop on Scheme and Functional Programming_. September 2007. Available online: [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2007/03-ghuloum.pdf).
-
 ### Implementing Scheme in Java, .NET, and JavaScript
 
   * Remzi Emre Başar, Caner Derici and Çağdaş Şenol. "World With Web: A compiler from world applications to JavaScript". _2009 Workshop on Scheme and Functional Programming_. August 2009. Available online: [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2009/14-basar.pdf).
