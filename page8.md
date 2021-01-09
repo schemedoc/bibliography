@@ -2,16 +2,6 @@
 
 ### Compiling Scheme to C
 
-  * Joel F. Bartlett. "SCHEME->C: A Portable Scheme-to-C Compiler". 1989. Available online: [ps](ftp://ftp.cs.indiana.edu/pub/scheme-repository/doc/pubs/s2c.ps.gz).
-  * R. Kent Dybvig. "C-Scheme". Masters Thesis. Indiana University Computer Science Department. Technical Report 149. 1983.
-  * Manuel Serrano. "Vers une compilation portable et performante des langages fonctionnels". PhD. Thesis. l'Universite Paris VI. December 1994. Available online: [ps](http://www.inria.fr/mimosa/Manuel.Serrano/publi/serrano-these94.ps.gz).
-  * Tanel Tammet. "Lambda-lifting as an optimization for compiling Scheme to C". Chalmers University of Technology. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/tammet-hobbit.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/tammet-hobbit.pdf).
-  * Brent W. Benson, Jr.. "libscheme: Scheme as a C Library". _Proceedings of the 1994 USENIX Symposium on Very High Level Languages_. 1994. Available online: [ps](ftp://ftp.cs.indiana.edu/pub/scheme-repository/doc/pubs/libscheme-vhll.ps.gz).
-  * John R. Rose and Hans Muller. "Integrating the Scheme and C languages". _Proceedings of the conference on Lisp and functional programming_. June 1992. Available online: [ACM Digital Library](http://www.acm.org/pubs/citations/proceedings/lfp/141471/p247-rose/).
-  * Henry G. Baker. "CONS Should Not CONS Its Arguments, Part II: Cheney on the M.T.A.". May 1994. Available online: [ps](http://home.pipeline.com/~hbaker1/CheneyMTA.ps.gz) [html](http://home.pipeline.com/~hbaker1/CheneyMTA.html).
-  * Marc Feeley, James S. Miller, Guillermo J. Rozas, Jason A. Wilson. "Compiling Higher-Order Languages into Fully Tail-Recursive Portable C". departement d'informatique et r.o., Universite de Montreal. Rapport technique 1078. Aout 1997. Available online: [ps](http://www.iro.umontreal.ca/~feeley/papers/tr1078.ps.gz).
-  * Marc Feeley. "A portable implementation of first-class continuations for unrestricted interoperability with C in a multithreaded Scheme". _Scheme and Functional Programming 2000_. September 2000. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2000/feeley.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/sw2000/feeley.pdf).
-
 ### VLISP: Formally Verified Scheme Implementation
 
   * Joshua D. Guttman, John D. Ramsdell and Mitchell Wand. "VLISP: A Verified Implementation of Scheme". _Lisp and Symbolic Computation_. Vol. 8 No. 1/2. 1995. Available online: [ps](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/vlisp-lasc/results.ps.gz) [pdf](https://raw.githubusercontent.com/scheme-live/library.readscheme.org/master/repository.readscheme.org/ftp/papers/vlisp-lasc/results.pdf).
