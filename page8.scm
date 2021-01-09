@@ -778,7 +778,7 @@
 
 (id bres2004bigloo)
 (type article)
-(title "Bigloo. NET: compiling Scheme to. NET CLR.")
+(title "Bigloo.NET: compiling Scheme to .NET CLR")
 (author "Bres, Yannis")
 (author "Serpette, Bernard P")
 (author "Serrano, Manuel")
