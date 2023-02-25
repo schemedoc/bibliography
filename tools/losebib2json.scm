@@ -1,5 +1,10 @@
 #! /usr/bin/env gosh
 
+;;;; Script to convert losebib file to JSON
+
+;;; Copyright 2020 Lassi Kortela
+;;; SPDX-License-Identifier: MIT
+
 (import (scheme base) (scheme write) (srfi 1))
 (import (rfc json))
 (import (losebib-read))

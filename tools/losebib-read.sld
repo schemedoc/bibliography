@@ -1,3 +1,8 @@
+;;;; Library for reading losebib files
+
+;;; Copyright 2020 Lassi Kortela
+;;; SPDX-License-Identifier: MIT
+
 (define-library (losebib-read)
   (export losebib-read-all losebib-read-file)
   (import (scheme base) (scheme file) (scheme read))

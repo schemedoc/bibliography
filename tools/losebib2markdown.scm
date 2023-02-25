@@ -1,5 +1,10 @@
 #!
 
+;;;; Script to convert losebib files to Markdown
+
+;;; Copyright 2020 Lassi Kortela
+;;; SPDX-License-Identifier: MIT
+
 (import (scheme base) (scheme write))
 (import (losebib-read))
 

@@ -1,5 +1,10 @@
 #! /usr/bin/env gosh
 
+;;;; Script to convert BibTeX bibliography to losebib
+
+;;; Copyright 2020-2021 Lassi Kortela
+;;; SPDX-License-Identifier: MIT
+
 (import (scheme base) (scheme write) (gauche base) (srfi 1) (srfi 13))
 
 (define (read-all-lines)
