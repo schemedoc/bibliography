@@ -1,5 +1,7 @@
-#! /usr/bin/env gosh
-
+#!/bin/sh
+#|
+exec gosh -I$(dirname $0) -- $0 "$@"
+|#
 ;;;; Script to convert losebib file to JSON
 
 ;;; Copyright 2020 Lassi Kortela

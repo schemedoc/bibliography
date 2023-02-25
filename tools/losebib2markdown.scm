@@ -1,5 +1,7 @@
-#!
-
+#!/bin/sh
+#|
+exec gosh -I$(dirname $0) -- $0 "$@"
+|#
 ;;;; Script to convert losebib files to Markdown
 
 ;;; Copyright 2020 Lassi Kortela

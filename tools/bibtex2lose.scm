@@ -1,5 +1,7 @@
-#! /usr/bin/env gosh
-
+#!/bin/sh
+#|
+exec gosh -I$(dirname $0) -- $0 "$@"
+|#
 ;;;; Script to convert BibTeX bibliography to losebib
 
 ;;; Copyright 2020-2021 Lassi Kortela
