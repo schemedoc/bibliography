@@ -1,3 +1,8 @@
+;;;; Support macros for working on Scheme Bibliography
+
+;;; Copyright 2020 Lassi Kortela
+;;; SPDX-License-Identifier: MIT
+
 (defvar scheme-bibliography-pdf-todo-directory nil)
 (defvar scheme-bibliography-pdf-directory nil)
 
