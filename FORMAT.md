@@ -26,3 +26,17 @@ The overview of format is:
     [(id ...) ...]
 
     (end-group)
+
+## Name Formats
+
+If the `<name>` in `(author <name>)` or `(editor <name>)` is a string,
+its interpretation is unspecified.
+
+If the `<name>` is `(bibtex <given> <particle> <family> <suffix>)`
+where `<given>`, `<particle>`, `<family>` and `<suffix>` are strings,
+it is interpreted as a *BibTeX-modeled name.*
+
+In the BibTeX-modeled names, `<given>`, `<particle>` and `<suffix>` can be
+zero-length strings.
+
+It is an error if the `<name>` is neither of the above.
